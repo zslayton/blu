@@ -1,0 +1,5 @@
+Language 'blu' was created with /home/zslayton/parrot-4.0.0/tools/dev/mk_language_shell.pl, r$Revision$.
+
+    $ parrot setup.pir
+    $ parrot setup.pir test
+
