@@ -1,19 +1,19 @@
 
 .namespace []
-.sub "_block1000"  :anon :subid("10_1329931138.00247")
+.sub "_block1000"  :anon :subid("10_1330288675.64685")
 .annotate 'file', "src/blu/Runtime.pm"
 .annotate 'line', 0
-    .const 'Sub' $P1009 = "12_1329931138.00247" 
+    .const 'Sub' $P1009 = "12_1330288675.64685" 
     capture_lex $P1009
-    .const 'Sub' $P1003 = "11_1329931138.00247" 
+    .const 'Sub' $P1003 = "11_1330288675.64685" 
     capture_lex $P1003
 .annotate 'line', 3
-    .const 'Sub' $P1003 = "11_1329931138.00247" 
+    .const 'Sub' $P1003 = "11_1330288675.64685" 
     newclosure $P1007, $P1003
     set $P1002, $P1007
     .lex "print", $P1002
 .annotate 'line', 8
-    .const 'Sub' $P1009 = "12_1329931138.00247" 
+    .const 'Sub' $P1009 = "12_1330288675.64685" 
     newclosure $P1013, $P1009
     set $P1008, $P1013
     .lex "say", $P1008
@@ -27,14 +27,14 @@
     find_lex $P102, "print"
     find_lex $P102, "say"
     .return ($P102)
-    .const 'Sub' $P1015 = "13_1329931138.00247" 
+    .const 'Sub' $P1015 = "13_1330288675.64685" 
     .return ($P1015)
 .end
 
 
 .namespace []
 .include "except_types.pasm"
-.sub "print"  :subid("11_1329931138.00247") :outer("10_1329931138.00247")
+.sub "print"  :subid("11_1330288675.64685") :outer("10_1330288675.64685")
     .param pmc param_1006 :slurpy
 .annotate 'file', "src/blu/Runtime.pm"
 .annotate 'line', 3
@@ -58,7 +58,7 @@
 
 .namespace []
 .include "except_types.pasm"
-.sub "say"  :subid("12_1329931138.00247") :outer("10_1329931138.00247")
+.sub "say"  :subid("12_1330288675.64685") :outer("10_1330288675.64685")
     .param pmc param_1012 :slurpy
 .annotate 'file', "src/blu/Runtime.pm"
 .annotate 'line', 8
@@ -81,10 +81,10 @@
 
 
 .namespace []
-.sub "_block1014" :load :anon :subid("13_1329931138.00247")
+.sub "_block1014" :load :anon :subid("13_1330288675.64685")
 .annotate 'file', "src/blu/Runtime.pm"
 .annotate 'line', 1
-    .const '' $P1016 = "10_1329931138.00247" 
+    .const '' $P1016 = "10_1330288675.64685" 
     $P103 = $P1016()
     .return ($P103)
 .end
