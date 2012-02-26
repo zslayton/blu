@@ -21,21 +21,61 @@ token ws {
 
 ## Statements
 
-rule statement_list { [ <statement> | <?> ] ** ';' }
+#rule statement_list { [ <statement> | <?> ] ** ';' }
+#
+#rule statement {
+#    | <statement_control>
+#    | <EXPR>
+#}
 
-rule statement {
-    | <statement_control>
-    | <EXPR>
+rule statement_list {
+	<stat_or_def>*
 }
 
-proto token statement_control { <...> }
-rule statement_control:sym<say>   { <sym> [ <EXPR> ] ** ','  }
-rule statement_control:sym<print> { <sym> [ <EXPR> ] ** ','  }
+rule statement {
+	<assignment>
+}
+
+# Newly added per tutorial ch 3
+
+rule stat_or_def {
+	<statement>
+}
+
+rule assignment {
+	<primary> '=' <EXPR>
+}
+
+rule primary {
+	<identifier>
+}
+
+token identifier {
+	<!keyword> <ident>
+}
+
+token keyword {
+	['and'|'catch'|'do'   |'else' |'end' |'for' |'if'
+	|'not'|'or'   |'sub'  |'throw'|'try' |'var'|'while']>>
+}
+
+token term:sym<primary> {
+	<primary>
+}
+
+#proto token statement_control { <...> }
+#rule statement_control:sym<say>   { <sym> [ <EXPR> ] ** ','  }
+#rule statement_control:sym<print> { <sym> [ <EXPR> ] ** ','  }
 
 ## Terms
 
-token term:sym<integer> { <integer> }
-token term:sym<quote> { <quote> }
+#token term:sym<integer> { <integer> }
+# Renamed to
+token term:sym<integer_constant> { <integer> }
+
+#token term:sym<quote> { <quote> }
+# Renamed to 
+token term:sym<string_constant> { <quote> }
 
 proto token quote { <...> }
 token quote:sym<'> { <?[']> <quote_EXPR: ':q'> }
