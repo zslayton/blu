@@ -32,8 +32,13 @@ rule statement_list {
 	<stat_or_def>*
 }
 
-rule statement {
-	<assignment>
+#rule statement {
+#	<assignment>
+#}
+
+# Newly added per tutorial ch 4
+proto rule statement {
+	<...>
 }
 
 # Newly added per tutorial ch 3
@@ -42,8 +47,34 @@ rule stat_or_def {
 	<statement>
 }
 
-rule assignment {
+# ch 4
+
+rule statement:sym<assignment>
+{
 	<primary> '=' <EXPR>
+}
+
+#rule assignment {
+#	<primary> '=' <EXPR>
+#}
+
+rule statement:sym<if> {
+	<sym> <EXPR> 'then' $<then>=<block>
+	['else' $<else>=<block> ]?
+	'end'
+}
+
+rule statement:sym<while> {
+	<sym> <EXPR> 'do' <block>
+	'end'
+}
+
+rule block {
+	<statement>*
+}
+
+rule statement:sym<throw> {
+	<sym> <EXPR>
 }
 
 rule primary {

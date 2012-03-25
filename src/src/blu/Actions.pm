@@ -21,8 +21,44 @@ method statement_list($/) {
 #method statement($/) {
 #    make $<statement_control> ?? $<statement_control>.ast !! $<EXPR>.ast;
 #}
-method statement($/) {
-	make $<assignment>.ast;
+
+# ch 4
+#method statement($/) {
+#	make $<assignment>.ast;
+#}
+
+method block($/) {
+        # create a new block, set its type to 'immediate',
+        # meaning it is potentially executed immediately
+        # (as opposed to a declaration, such as a
+        # subroutine definition).
+        my $past := PAST::Block.new( :blocktype('immediate'),
+                                     :node($/) );
+
+        # for each statement, add the result
+        # object to the block
+        for $<statement> {
+            $past.push($_.ast);
+        }
+        make $past;
+}
+
+method statement:sym<if>($/) {
+	my $cond := $<EXPR>.ast;
+	my $past := PAST::Op.new( $cond, $<then>.ast,
+                                  :pasttype('if'),
+                                  :node($/) 
+				);
+	if $<else> {
+		$past.push($<else>[0].ast);
+	}
+	make $past;
+}
+
+method statement:sym<throw>($/) {
+        make PAST::Op.new( $<EXPR>.ast,
+                           :pirop('die'),
+                           :node($/) );
 }
 
 method statement_control:sym<say>($/) {
@@ -37,6 +73,13 @@ method statement_control:sym<print>($/) {
     make $past;
 }
 
+#ch 4
+method statement:sym<while>($/) {
+     my $cond := $<EXPR>.ast;
+     my $body := $<block>.ast;
+     make PAST::Op.new( $cond, $body, :pasttype('while'), :node($/) );
+}
+
 method primary($/) {
 	make $<identifier>.ast;
 }
@@ -49,7 +92,9 @@ method stat_or_def($/) {
 	make $<statement>.ast;
 }
 
-method assignment($/) {
+# ch 4
+#method assignment($/) {
+method statement:sym<assignment>($/) {
 	my $lhs := $<primary>.ast;
 	my $rhs := $<EXPR>.ast;
 	$lhs.lvalue(1);
