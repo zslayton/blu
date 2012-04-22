@@ -135,8 +135,8 @@ method statement:sym<try>($/) {
 	
 
 	
-	my $pir := '	.get_results (%r, $S0)\n'
-		~ "\n	store_lex '" ~ $exc.name() 
+	my $pir := '    .get_results (%r, $S0)'
+		~ "\n    store_lex '" ~ $exc.name()
 		~ "', %r";
 
 	$catch.unshift( PAST::Op.new( :inline($pir), :node($/) ) );

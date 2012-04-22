@@ -1,5 +1,11 @@
-try z = 333
+ex = 1
+print "I'm going to try something here.\n"
+
+try
+	throw "Gasket blown."
+	print "It worked just fine.\n"
 catch ex
-	z = 222
-	y = ex
+	print "It didn't work at all: ", ex, "\n"
 end
+
+print "Done.\n"
