@@ -1,3 +1,7 @@
 x = 54
 y = 21
 m = "degs"
+
+print "x = ", x, "\n"
+print "y = ", y, "\n"
+print "m = '", m, "'\n"

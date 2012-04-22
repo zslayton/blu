@@ -1,4 +1,10 @@
-x = 1
+x = 3
+
+print "Starting loop with x = ", x, "\n"
+
 while x do
-	x = 42 
+	x = x - 1
+	print "x is now ", x, "\n"
 end
+
+print "Loop complete, x is now ", x, "\n"

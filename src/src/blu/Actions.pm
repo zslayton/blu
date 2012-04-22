@@ -37,6 +37,7 @@ method statement_list($/) {
 method begin_block ($/) {
 	our $?BLOCK;
 	our @?BLOCK;
+    	#say("Beginning a new block.");
 	$?BLOCK := PAST::Block.new(:blocktype('immediate'), :node($/));
 	@?BLOCK.unshift($?BLOCK);
 }
@@ -100,6 +101,7 @@ method statement:sym<say>($/) {
 }
 
 method statement:sym<print>($/) {
+    #say("Print requested.");
     my $past := PAST::Op.new( :name<print>, :pasttype<call>, :node($/) );
     for $<EXPR> { $past.push( $_.ast ); }
     make $past;
@@ -110,6 +112,14 @@ method statement:sym<while>($/) {
      my $cond := $<EXPR>.ast;
      my $body := $<block>.ast;
      make PAST::Op.new( $cond, $body, :pasttype('while'), :node($/) );
+}
+
+# ch 5, trying this
+method statement:sym<do>($/) {
+	my $body := $<block>.ast;
+	my $past := PAST::Block.new(:blocktype('immediate'), :node($/));
+	$past.push($body);
+	make $past;
 }
 
 method statement:sym<try>($/) {
@@ -157,7 +167,18 @@ method exception($/) {
 
 method statement:sym<var>($/) {
 	our $?BLOCK;
+
 	my $past := $<identifier>.ast;
+	$past.scope('lexical');
+	$past.isdecl(1);
+
+	if $<EXPR> {
+		$past.viviself($<EXPR>[0].ast);
+	}
+	else {
+		$past.viviself('Undef');
+	}
+
 	my $name := $past.name;
 
 	if $?BLOCK.symbol( $name ) {

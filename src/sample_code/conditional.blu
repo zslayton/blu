@@ -1,5 +1,18 @@
-if 1 then
-	x = "It was true."
+x = 1 
+if x then
+	t = "It was true."
 else
-	x = "It was not true."
+	t = "It was not true."
 end
+print "Truth?: ", t, "\n"
+
+x = (x) - 1
+print "X is now ", x, "\n"
+
+if x then
+	t = "It was true."
+else
+	t = "It was not true."
+end
+
+print "Truth?: ", t, "\n"
