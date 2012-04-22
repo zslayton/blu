@@ -6,9 +6,17 @@ This is the grammar for blu in Perl 6 rules.
 
 grammar blu::Grammar is HLL::Grammar;
 
-token TOP {
-    <statement_list>
-    [ $ || <.panic: "Syntax error"> ]
+#token TOP {
+rule TOP {
+	<.begin_TOP>
+	<statement_list>
+	[ $ || <.panic: "Syntax error"> ]
+}
+
+# ch 5
+
+token begin_TOP {
+	<?>
 }
 
 ## Lexer items
@@ -47,6 +55,12 @@ rule stat_or_def {
 	<statement>
 }
 
+# ch 5
+
+rule statement:sym<var> {
+	<sym> <identifier> ['=' <EXPR>]?
+}
+
 # ch 4
 
 rule statement:sym<assignment>
@@ -80,7 +94,16 @@ rule exception {
 	<identifier>
 }
 
+rule statement:sym<do> {
+	<sym> <block> 'end'
+}
+
+token begin_block {
+	<?> 
+}
+
 rule block {
+	<.begin_block>
 	<statement>*
 }
 

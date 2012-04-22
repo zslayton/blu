@@ -1,7 +1,17 @@
 class blu::Actions is HLL::Actions;
 
 method TOP($/) {
-    make PAST::Block.new( $<statement_list>.ast , :hll<blu>, :node($/) );
+	our @?BLOCK;
+	my $past := @?BLOCK.shift();
+	$past.push($<statement_list>.ast);
+	make $past;
+    #make PAST::Block.new( $<statement_list>.ast , :hll<blu>, :node($/) );
+}
+
+method begin_TOP ($/) {
+	our $?BLOCK := PAST::Block.new(:blocktype<declaration>, :node($/), :hll<blu>);
+	our @?BLOCK;
+	@?BLOCK.unshift($?BLOCK);
 }
 
 #method statement_list($/) {
@@ -22,26 +32,49 @@ method statement_list($/) {
 #    make $<statement_control> ?? $<statement_control>.ast !! $<EXPR>.ast;
 #}
 
+# ch 5
+
+method begin_block ($/) {
+	our $?BLOCK;
+	our @?BLOCK;
+	say("Starting a new block.\n");
+	$?BLOCK := PAST::Block.new(:blocktype('immediate'), :node($/));
+	@?BLOCK.unshift($?BLOCK);
+}
+
+#method block($/, $key) {
+method block($/) {
+	our $?BLOCK;
+	our @?BLOCK;
+	my $past := @?BLOCK.shift();
+	$?BLOCK := @?BLOCK[0];
+
+	for $<statement> {
+		$past.push($_.ast);
+	}
+	make $past;
+}
+
 # ch 4
 #method statement($/) {
 #	make $<assignment>.ast;
 #}
 
-method block($/) {
+#method block($/) {
         # create a new block, set its type to 'immediate',
         # meaning it is potentially executed immediately
         # (as opposed to a declaration, such as a
         # subroutine definition).
-        my $past := PAST::Block.new( :blocktype('immediate'),
-                                     :node($/) );
+#        my $past := PAST::Block.new( :blocktype('immediate'),
+#                                     :node($/) );
 
         # for each statement, add the result
         # object to the block
-        for $<statement> {
-            $past.push($_.ast);
-        }
-        make $past;
-}
+#        for $<statement> {
+#            $past.push($_.ast);
+#        }
+#        make $past;
+#}
 
 method statement:sym<if>($/) {
 	my $cond := $<EXPR>.ast;
@@ -105,6 +138,35 @@ method statement:sym<try>($/) {
 
 method exception($/) {
 	my $past := $<identifier>.ast;
+	make $past;
+}
+# ch 5
+
+#method statement:sym<var>($/) {
+#	my $past := $identifier>.ast;
+#	$past.scope('lexical');
+#	$past.isdecl(1);
+#
+#	if $<EXPR> {
+#		$past.viviself($<EXPR>[0].ast);
+#	}
+#	else {
+#		$past.viviself('Undef');
+#	}
+#	make $past;
+#}
+
+method statement:sym<var>($/) {
+	our $?BLOCK;
+	my $past := $<identifier>.ast;
+	my $name := $past.name;
+
+	if $?BLOCK.symbol( $name ) {
+		$/.CURSOR.panic("Error: symbol '" ~ $name ~ "' was previously defined.\n");
+	}
+	else {
+		$?BLOCK.symbol( $name, :scope('lexical') );
+	}
 	make $past;
 }
 
