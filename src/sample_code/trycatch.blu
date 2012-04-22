@@ -1,0 +1,5 @@
+try z = 333
+catch ex
+	z = 222
+	y = ex
+end

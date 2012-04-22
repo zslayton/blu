@@ -80,6 +80,34 @@ method statement:sym<while>($/) {
      make PAST::Op.new( $cond, $body, :pasttype('while'), :node($/) );
 }
 
+method statement:sym<try>($/) {
+	my $try := $<try>.ast;
+
+	my $catch := PAST::Stmts.new( :node($/) );
+	$catch.push($<catch>.ast);
+
+	my $exc := $<exception>.ast;
+	$exc.isdecl(1);
+	$exc.scope('lexical');
+	$exc.viviself(0);
+	
+
+	
+	my $pir := '	.get_results (%r, $S0)\n'
+		~ "\n	store_lex '" ~ $exc.name() 
+		~ "', %r";
+
+	$catch.unshift( PAST::Op.new( :inline($pir), :node($/) ) );
+
+	$catch.unshift($exc);
+	make PAST::Op.new( $try, $catch, :pasttype('try'), :node($/) );
+}
+
+method exception($/) {
+	my $past := $<identifier>.ast;
+	make $past;
+}
+
 method primary($/) {
 	make $<identifier>.ast;
 }

@@ -69,6 +69,17 @@ rule statement:sym<while> {
 	'end'
 }
 
+rule statement:sym<try> {
+	<sym> $<try>=<block>
+	'catch'	<exception>
+	$<catch>=<block>
+	'end'
+}
+
+rule exception {
+	<identifier>
+}
+
 rule block {
 	<statement>*
 }
