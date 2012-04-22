@@ -129,8 +129,12 @@ token term:sym<primary> {
 }
 
 #proto token statement_control { <...> }
-#rule statement_control:sym<say>   { <sym> [ <EXPR> ] ** ','  }
-#rule statement_control:sym<print> { <sym> [ <EXPR> ] ** ','  }
+rule statement:sym<say> {
+	<sym> [ <EXPR> ] ** ','
+}
+rule statement:sym<print> {
+	<sym> [ <EXPR> ] ** ','
+}
 
 ## Terms
 

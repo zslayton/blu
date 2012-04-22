@@ -37,7 +37,6 @@ method statement_list($/) {
 method begin_block ($/) {
 	our $?BLOCK;
 	our @?BLOCK;
-	say("Starting a new block.\n");
 	$?BLOCK := PAST::Block.new(:blocktype('immediate'), :node($/));
 	@?BLOCK.unshift($?BLOCK);
 }
@@ -94,13 +93,13 @@ method statement:sym<throw>($/) {
                            :node($/) );
 }
 
-method statement_control:sym<say>($/) {
+method statement:sym<say>($/) {
     my $past := PAST::Op.new( :name<say>, :pasttype<call>, :node($/) );
     for $<EXPR> { $past.push( $_.ast ); }
     make $past;
 }
 
-method statement_control:sym<print>($/) {
+method statement:sym<print>($/) {
     my $past := PAST::Op.new( :name<print>, :pasttype<call>, :node($/) );
     for $<EXPR> { $past.push( $_.ast ); }
     make $past;
