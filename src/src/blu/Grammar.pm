@@ -160,12 +160,23 @@ rule statement:sym<say> {
 rule statement:sym<print> {
 	<sym> [ <EXPR> ] ** ','
 }
+rule statement:sym<write> {
+	<sym> [ <EXPR> ] ** ','
+}
 
 ## Terms
 
 #token term:sym<integer> { <integer> }
 # Renamed to
 token term:sym<integer_constant> { <integer> }
+
+# Added in Ch 7
+token term:sym<floating_point_constant> {
+	[
+		| \d+ '.' \d*
+		| \d* '.' \d+
+	]
+}
 
 #token term:sym<quote> { <quote> }
 # Renamed to 
@@ -178,14 +189,35 @@ token quote:sym<"> { <?["]> <quote_EXPR: ':qq'> }
 ## Operators
 
 INIT {
+    
+    blu::Grammar.O(':prec<w>, :assoc<unary>',  '%unary-negate');
+    blu::Grammar.O(':prec<v>, :assoc<unary>',  '%unary-not');
     blu::Grammar.O(':prec<u>, :assoc<left>',  '%multiplicative');
     blu::Grammar.O(':prec<t>, :assoc<left>',  '%additive');
+    blu::Grammar.O(':prec<s>, :assoc<left>',  '%relational');
+    blu::Grammar.O(':prec<r>, :assoc<left>',  '%conjunction');
+    blu::Grammar.O(':prec<q>, :assoc<left>',  '%disjunction');
 }
 
 token circumfix:sym<( )> { '(' <.ws> <EXPR> ')' }
 
-token infix:sym<*>  { <sym> <O('%multiplicative, :pirop<mul>')> }
-token infix:sym</>  { <sym> <O('%multiplicative, :pirop<div>')> }
+token prefix:sym<-> { <sym> <O('%unary-negate, :pirop<neg>')> }
+    token prefix:sym<not> { <sym> <O('%unary-not, :pirop<isfalse>')> }
 
-token infix:sym<+>  { <sym> <O('%additive, :pirop<add>')> }
-token infix:sym<->  { <sym> <O('%additive, :pirop<sub>')> }
+    token infix:sym<*>  { <sym> <O('%multiplicative, :pirop<mul>')> }
+    token infix:sym<%>  { <sym> <O('%multiplicative, :pirop<mod>')> }
+    token infix:sym</>  { <sym> <O('%multiplicative, :pirop<div>')> }
+
+    token infix:sym<+>  { <sym> <O('%additive, :pirop<add>')> }
+    token infix:sym<->  { <sym> <O('%additive, :pirop<sub>')> }
+    token infix:sym<..> { <sym> <O('%additive, :pirop<concat>')> }
+
+    token infix:sym«<» { <sym> <O('%relational, :pirop<isle iPP>')> }
+    token infix:sym«<=» { <sym> <O('%relational, :pirop<islt iPP>')> }
+    token infix:sym«>» { <sym> <O('%relational, :pirop<isgt iPP>')> }
+    token infix:sym«>=» { <sym> <O('%relational, :pirop<isge iPP>')> }
+    token infix:sym«==» { <sym> <O('%relational, :pirop<iseq iPP>')> }
+    token infix:sym«!=» { <sym> <O('%relational, :pirop<isne iPP>')> }
+
+    token infix:sym<and> { <sym> <O('%conjunction, :pasttype<if>')> }
+    token infix:sym<or> { <sym> <O('%disjunction, :pasttype<unless>')> }

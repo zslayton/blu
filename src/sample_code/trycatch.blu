@@ -1,11 +1,9 @@
 ex = 1
-print "I'm going to try something here.\n"
+print "I'm going to try something here."
 
 try
 	throw "Gasket blown."
-	print "It worked just fine.\n"
+	print "It worked just fine."
 catch ex
-	print "It didn't work at all: ", ex, "\n"
+	print "It didn't work at all."
 end
-
-print "Done.\n"

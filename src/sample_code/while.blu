@@ -1,10 +1,10 @@
 x = 3
 
-print "Starting loop with x = ", x, "\n"
+print "Starting loop with x = ", x
 
 while x do
 	x = x - 1
-	print "x is now ", x, "\n"
+	print "x is now ", x
 end
 
-print "Loop complete, x is now ", x, "\n"
+print "Loop complete, x is now ", x 

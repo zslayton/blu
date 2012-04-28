@@ -99,8 +99,13 @@ method statement:sym<say>($/) {
     for $<EXPR> { $past.push( $_.ast ); }
     make $past;
 }
-
 method statement:sym<print>($/) {
+    my $past := PAST::Op.new( :name<say>, :pasttype<call>, :node($/) );
+    for $<EXPR> { $past.push( $_.ast ); }
+    make $past;
+}
+
+method statement:sym<write>($/) {
     #say("Print requested.");
     my $past := PAST::Op.new( :name<print>, :pasttype<call>, :node($/) );
     for $<EXPR> { $past.push( $_.ast ); }
@@ -291,6 +296,10 @@ method statement:sym<assignment>($/) {
 # Replaced by 
 method term:sym<integer_constant>($/) {
 	make PAST::Val.new(:value($<integer>.ast), :returns<Integer>);
+}
+
+method term:sym<floating_point_constant> ($/) {
+	make PAST::Val.new(:value(+$/), :returns<Float>);
 }
 
 method term:sym<string_constant>($/) {
