@@ -194,14 +194,89 @@ method primary($/) {
 	make $<identifier>.ast;
 }
 
-method identifier($/) {
-	make PAST::Var.new( :name(~$/), :scope('package'), :node($/) );
-} 
+# Old version; replaced to indroduce lexical scoping
+#method identifier($/) {
+#	make PAST::Var.new( :name(~$/), :scope('package'), :node($/) );
+#}
 
-method stat_or_def($/) {
-	make $<statement>.ast;
+method identifier($/) {
+	our @?BLOCK;
+	my $name := $<ident>;
+	my $scope := 'package'; # Default
+
+	for @?BLOCK {
+		if $_.symbol($name) {
+			$scope := 'lexical';
+		}
+	}
+
+	make PAST::Var.new( :name($name), :scope($scope), :viviself('Undef'), :node($/));
 }
 
+#method stat_or_def($/) {
+#	make $<statement>.ast;
+#}
+
+# Replacement described in ch 6
+method stat_or_def($/) {
+	if $<statement> {
+		make $<statement>.ast;
+	}
+	else { # Must be a def
+		make $<sub_definition>.ast;
+	}
+}
+
+method parameters($/) {
+	our $?BLOCK;
+	our @?BLOCK;
+	my $past := PAST::Block.new( :blocktype('declaration'), :node($/) );
+
+	# Add the parameters' names to the block
+	for $<identifier> {
+		my $param := $_.ast;
+		$param.scope('parameter');
+		$past.push($param);
+
+		$past.symbol($param.name(), :scope('lexical'));
+	}
+
+	$?BLOCK := $past;
+	@?BLOCK.unshift($past);
+	make $past;
+}
+
+method sub_definition($/) {
+	our $?BLOCK;
+	our @?BLOCK;
+	my $past := $<parameters>.ast;
+	my $name := $<identifier>.ast;
+
+	$past.name($name.name);
+
+	for $<statement> {
+		$past.push($_.ast);
+	}
+
+	@?BLOCK.shift();
+	$?BLOCK := @?BLOCK[0];
+	make $past;
+}
+
+method statement:sym<sub_call>($/) {
+	my $invocant := $<primary>.ast;
+	my $past := $<arguments>.ast;
+	$past.unshift($invocant);
+	make $past;
+}
+
+method arguments($/) {
+	my $past := PAST::Op.new(:pasttype('call'), :node($/) );
+	for $<EXPR> {
+		$past.push($_.ast);
+	}
+	make $past;
+}
 # ch 4
 #method assignment($/) {
 method statement:sym<assignment>($/) {

@@ -51,8 +51,22 @@ proto rule statement {
 
 # Newly added per tutorial ch 3
 
+#rule stat_or_def {
+#	<statement>
+#}
+
+# New version for ch 6
 rule stat_or_def {
-	<statement>
+	| <statement>
+	| <sub_definition>
+}
+
+rule statement:sym<sub_call> {
+	<primary> <arguments>
+}
+
+rule arguments {
+	'(' [<EXPR> ** ',']? ')'
 }
 
 # ch 5
@@ -105,6 +119,17 @@ token begin_block {
 rule block {
 	<.begin_block>
 	<statement>*
+}
+
+# Ch 6
+rule sub_definition {
+	'sub' <identifier> <parameters>
+	<statement>*
+	'end'
+}
+
+rule parameters {
+	'(' [<identifier> ** ',']? ')'
 }
 
 rule statement:sym<throw> {
