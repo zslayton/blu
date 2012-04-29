@@ -18,3 +18,8 @@ bool_string(1 < 5 and 1 == 2)
 write "1 < 5 or 1 == 2 --> "
 bool_string(1 < 5 or 1 == 2)
 
+write '"dog" == "dog" --> '
+bool_string("dog" == "dog")
+
+write '"dog" == "cat" --> '
+bool_string("dog" == "cat")

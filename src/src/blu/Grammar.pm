@@ -136,8 +136,18 @@ rule statement:sym<throw> {
 	<sym> <EXPR>
 }
 
+# Modified in Ch 8 
 rule primary {
-	<identifier>
+	<identifier> <postfix_expression>*
+}
+
+proto rule postfix_expression { <...> }
+
+rule postfix_expression:sym<index> { '[' <EXPR> ']' }
+rule postfix_expression:sym<key> { '{' <EXPR> '}' }
+
+rule postfix_expression:sym<member> {
+	'.' <identifier>
 }
 
 token identifier {
@@ -178,9 +188,23 @@ token term:sym<floating_point_constant> {
 	]
 }
 
+# Added in Ch 8
+rule circumfix:sym<[ ]> {
+	'[' [<EXPR> ** ',']? ']'
+}
+
+rule circumfix:sym<{ }>{
+	'{' [<named_field>  ** ',']? '}'
+}
+
+rule named_field {
+	<string_constant> ':' <EXPR>
+}
+
 #token term:sym<quote> { <quote> }
 # Renamed to 
-token term:sym<string_constant> { <quote> }
+token term:sym<string_constant> { <string_constant> }
+token string_constant{ <quote> }
 
 proto token quote { <...> }
 token quote:sym<'> { <?[']> <quote_EXPR: ':q'> }
@@ -212,8 +236,9 @@ token prefix:sym<-> { <sym> <O('%unary-negate, :pirop<neg>')> }
     token infix:sym<->  { <sym> <O('%additive, :pirop<sub>')> }
     token infix:sym<..> { <sym> <O('%additive, :pirop<concat>')> }
 
-    token infix:sym«<» { <sym> <O('%relational, :pirop<isle iPP>')> }
-    token infix:sym«<=» { <sym> <O('%relational, :pirop<islt iPP>')> }
+
+    token infix:sym«<» { <sym> <O('%relational, :pirop<islt iPP>')> }
+    token infix:sym«<=» { <sym> <O('%relational, :pirop<isle iPP>')> }
     token infix:sym«>» { <sym> <O('%relational, :pirop<isgt iPP>')> }
     token infix:sym«>=» { <sym> <O('%relational, :pirop<isge iPP>')> }
     token infix:sym«==» { <sym> <O('%relational, :pirop<iseq iPP>')> }

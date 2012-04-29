@@ -106,7 +106,6 @@ method statement:sym<print>($/) {
 }
 
 method statement:sym<write>($/) {
-    #say("Print requested.");
     my $past := PAST::Op.new( :name<print>, :pasttype<call>, :node($/) );
     for $<EXPR> { $past.push( $_.ast ); }
     make $past;
@@ -195,8 +194,22 @@ method statement:sym<var>($/) {
 	make $past;
 }
 
+# Replaced in Ch 8
+#method primary($/) {
+#	make $<identifier>.ast;
+#}
+
 method primary($/) {
-	make $<identifier>.ast;
+
+	my $past := $<identifier>.ast;
+	
+	for $<postfix_expression> {
+		my $expr := $_.ast;
+		$expr.unshift( $past );
+		$past := $expr;
+	}
+
+	make $past;
 }
 
 # Old version; replaced to indroduce lexical scoping
@@ -302,14 +315,93 @@ method term:sym<floating_point_constant> ($/) {
 	make PAST::Val.new(:value(+$/), :returns<Float>);
 }
 
-method term:sym<string_constant>($/) {
+# Renamed in Ch 8
+method string_constant($/) {
 	my $past := $<quote>.ast;
 	$past.returns('String');
 	make $past;
 }
 
+method term:sym<string_constant>($/) {
+	make $<string_constant>.ast;
+}
+
+method named_field($/) {
+	my $past := $<EXPR>.ast;
+	my $name := $<string_constant>.ast;
+
+	$past.named($name);
+	make $past;
+}
+
+method circumfix:sym<[ ]>($/) {
+	my $past := PAST::Op.new( 
+		:name('!array'),
+		:pasttype('call'),
+		:node($/) );
+	
+	for $<EXPR> {
+		$past.push($_.ast);
+	}
+	
+	make $past;
+}
+
+method circumfix:sym<{ }>($/) {
+	my $past := PAST::Op.new(
+		:name('!hash'),
+		:pasttype('call'),
+		:node($/) );
+
+	for $<named_field> {
+		$past.push($_.ast);
+	}
+
+	make $past;
+}
+
+method postfix_expression:sym<member>($/) {
+	my $member := $<identifier>.ast;
+	my $key := PAST::Val.new(
+		:returns('String'),
+		:value($member.name),
+		:node($/)
+	);
+
+	make PAST::Var.new(
+		$key,
+		:scope('keyed'),
+		:vivibase('Hash'),
+		:viviself('Undef'),
+		:node($/)
+	);
+}
+
 method term:sym<primary>($/) {
 	make $<primary>.ast;
+}
+
+method postfix_expression:sym<index>($/) {
+	my $index := $<EXPR>.ast;
+	my $past := PAST::Var.new(
+		$index,
+		:scope('keyed'),
+		:viviself('Undef'),
+		:vivibase('ResizablePMCArray'),
+		:node($/)
+	);
+	make $past;
+}
+
+method postfix_expression:sym<key>($/) {
+	my $key := $<EXPR>.ast;
+
+	make PAST::Var.new( $key,
+		:scope('keyed'),
+		:vivibase('Hash'),
+		:viviself('Undef'),
+		:node($/)
+	);
 }
 
 method quote:sym<'>($/) { make $<quote_EXPR>.ast; }
