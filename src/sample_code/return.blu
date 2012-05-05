@@ -1,24 +1,24 @@
-sub wrap(str, tag)
+fn wrap(str, tag)
 	return "<"..tag..">\n"..str.."\n</"..tag..">"
 end
 
-sub table(str)
+fn table(str)
 	return wrap(str, 'table')
 end
 
-sub col(str)
+fn col(str)
 	return wrap(str, 'td')
 end
 
-sub row(str)
+fn row(str)
 	return wrap(str, 'tr')
 end
 
-sub body(str)
+fn body(str)
 	return wrap(str, 'body')
 end
 
-sub html(str)
+fn html(str)
 	return wrap(str, 'html')
 end
 

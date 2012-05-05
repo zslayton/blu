@@ -1,10 +1,10 @@
-sub greet(name)
+fn greet(name)
 	print "Hey ", name, "!"
 end
 
 greet("Fibonacci")
 
-sub add(v1, v2)
+fn add(v1, v2)
 	print v1, " + ", v2, " = ", (v1 + v2)
 end
 
@@ -14,11 +14,11 @@ add(2, 3)
 add(3, 5)
 add(5, 8)
 
-sub print_formal_name(name)
+fn print_formal_name(name)
 	print "Mr. ", name
 end
 
-sub formal_greet(name)
+fn formal_greet(name)
 	write "Good day, "
 	print_formal_name(name)
 end

@@ -58,14 +58,14 @@ proto rule statement {
 # New version for ch 6
 rule stat_or_def {
 	| <statement>
-	| <sub_definition>
+	| <fn_definition>
 }
 
-rule statement:sym<sub_call> {
+rule statement:sym<fn_call> {
 	<primary> <arguments>
 }
-# Necessary for x = sub_call() type statements
-rule term:sym<term_sub_call> {
+# Necessary for x = fn_call() type statements
+rule term:sym<term_fn_call> {
 	<primary> <arguments>
 }
 
@@ -130,8 +130,8 @@ rule block {
 }
 
 # Ch 6
-rule sub_definition {
-	'sub' <identifier> <parameters>
+rule fn_definition {
+	'fn' <identifier> <parameters>
 	<statement>*
 	'end'
 }
@@ -164,7 +164,7 @@ token identifier {
 
 token keyword {
 	['and'|'catch'|'do'   |'else' |'end' |'for' |'if'
-	|'not'|'or'|'return'|'sub' |'throw'|'try' |'var'|'while']>>
+	|'not'|'or'|'return'|'fn' |'throw'|'try' |'var'|'while']>>
 }
 
 token term:sym<primary> {

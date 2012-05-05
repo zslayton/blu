@@ -1,4 +1,4 @@
-sub bool_string(expr)
+fn bool_string(expr)
 	if expr then
 		print "true"
 	else

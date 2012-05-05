@@ -4,7 +4,7 @@ secret_identities = {
 	'Spiderman' : 'Peter Parker'
 }
 
-sub reveal(hero)
+fn reveal(hero)
 	print "'", hero, "' is really ", secret_identities{hero}, "!"
 end
 

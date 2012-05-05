@@ -248,7 +248,7 @@ method stat_or_def($/) {
 		make $<statement>.ast;
 	}
 	else { # Must be a def
-		make $<sub_definition>.ast;
+		make $<fn_definition>.ast;
 	}
 }
 
@@ -271,7 +271,7 @@ method parameters($/) {
 	make $past;
 }
 
-method sub_definition($/) {
+method fn_definition($/) {
 	our $?BLOCK;
 	our @?BLOCK;
 	my $past := $<parameters>.ast;
@@ -289,13 +289,13 @@ method sub_definition($/) {
 	make $past;
 }
 
-method statement:sym<sub_call>($/) {
+method statement:sym<fn_call>($/) {
 	my $invocant := $<primary>.ast;
 	my $past := $<arguments>.ast;
 	$past.unshift($invocant);
 	make $past;
 }
-method term:sym<term_sub_call>($/) {
+method term:sym<term_fn_call>($/) {
 	my $invocant := $<primary>.ast;
 	my $past := $<arguments>.ast;
 	$past.unshift($invocant);

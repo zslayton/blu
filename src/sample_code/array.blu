@@ -1,4 +1,4 @@
-sub print_array(name, array, len)
+fn print_array(name, array, len)
 	print "===================="
 	print " Array '", name, "'"
 	print "===================="

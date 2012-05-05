@@ -1,9 +1,9 @@
 
 .namespace []
-.sub "_block1000"  :anon :subid("10_1336232581.02998")
+.sub "_block1000"  :anon :subid("10_1336235025.56877")
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 0
-    .const 'Sub' $P1003 = "11_1336232581.02998" 
+    .const 'Sub' $P1003 = "11_1336235025.56877" 
     capture_lex $P1003
 .annotate 'line', 1
     $P0 = find_dynamic_lex "$*CTXSAVE"
@@ -13,21 +13,21 @@
     $P0."ctxsave"()
   ctxsave_done:
 .annotate 'line', 3
-    .const 'Sub' $P1003 = "11_1336232581.02998" 
+    .const 'Sub' $P1003 = "11_1336235025.56877" 
     capture_lex $P1003
     $P101 = $P1003()
 .annotate 'line', 1
     .return ($P101)
-    .const 'Sub' $P1326 = "64_1336232581.02998" 
+    .const 'Sub' $P1326 = "64_1336235025.56877" 
     .return ($P1326)
 .end
 
 
 .namespace []
-.sub "" :load :init :subid("post65") :outer("10_1336232581.02998")
+.sub "" :load :init :subid("post65") :outer("10_1336235025.56877")
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 0
-    .const 'Sub' $P1001 = "10_1336232581.02998" 
+    .const 'Sub' $P1001 = "10_1336235025.56877" 
     .local pmc block
     set block, $P1001
     $P1328 = get_root_global ["parrot"], "P6metaclass"
@@ -36,86 +36,86 @@
 
 
 .namespace ["blu";"Actions"]
-.sub "_block1002"  :subid("11_1336232581.02998") :outer("10_1336232581.02998")
+.sub "_block1002"  :subid("11_1336235025.56877") :outer("10_1336235025.56877")
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 3
-    .const 'Sub' $P1316 = "62_1336232581.02998" 
+    .const 'Sub' $P1316 = "62_1336235025.56877" 
     capture_lex $P1316
-    .const 'Sub' $P1311 = "61_1336232581.02998" 
+    .const 'Sub' $P1311 = "61_1336235025.56877" 
     capture_lex $P1311
-    .const 'Sub' $P1306 = "60_1336232581.02998" 
+    .const 'Sub' $P1306 = "60_1336235025.56877" 
     capture_lex $P1306
-    .const 'Sub' $P1300 = "59_1336232581.02998" 
+    .const 'Sub' $P1300 = "59_1336235025.56877" 
     capture_lex $P1300
-    .const 'Sub' $P1293 = "58_1336232581.02998" 
+    .const 'Sub' $P1293 = "58_1336235025.56877" 
     capture_lex $P1293
-    .const 'Sub' $P1288 = "57_1336232581.02998" 
+    .const 'Sub' $P1288 = "57_1336235025.56877" 
     capture_lex $P1288
-    .const 'Sub' $P1281 = "56_1336232581.02998" 
+    .const 'Sub' $P1281 = "56_1336235025.56877" 
     capture_lex $P1281
-    .const 'Sub' $P1271 = "54_1336232581.02998" 
+    .const 'Sub' $P1271 = "54_1336235025.56877" 
     capture_lex $P1271
-    .const 'Sub' $P1261 = "52_1336232581.02998" 
+    .const 'Sub' $P1261 = "52_1336235025.56877" 
     capture_lex $P1261
-    .const 'Sub' $P1253 = "51_1336232581.02998" 
+    .const 'Sub' $P1253 = "51_1336235025.56877" 
     capture_lex $P1253
-    .const 'Sub' $P1248 = "50_1336232581.02998" 
+    .const 'Sub' $P1248 = "50_1336235025.56877" 
     capture_lex $P1248
-    .const 'Sub' $P1242 = "49_1336232581.02998" 
+    .const 'Sub' $P1242 = "49_1336235025.56877" 
     capture_lex $P1242
-    .const 'Sub' $P1238 = "48_1336232581.02998" 
+    .const 'Sub' $P1238 = "48_1336235025.56877" 
     capture_lex $P1238
-    .const 'Sub' $P1233 = "47_1336232581.02998" 
+    .const 'Sub' $P1233 = "47_1336235025.56877" 
     capture_lex $P1233
-    .const 'Sub' $P1225 = "46_1336232581.02998" 
+    .const 'Sub' $P1225 = "46_1336235025.56877" 
     capture_lex $P1225
-    .const 'Sub' $P1215 = "44_1336232581.02998" 
+    .const 'Sub' $P1215 = "44_1336235025.56877" 
     capture_lex $P1215
-    .const 'Sub' $P1207 = "43_1336232581.02998" 
+    .const 'Sub' $P1207 = "43_1336235025.56877" 
     capture_lex $P1207
-    .const 'Sub' $P1199 = "42_1336232581.02998" 
+    .const 'Sub' $P1199 = "42_1336235025.56877" 
     capture_lex $P1199
-    .const 'Sub' $P1184 = "40_1336232581.02998" 
+    .const 'Sub' $P1184 = "40_1336235025.56877" 
     capture_lex $P1184
-    .const 'Sub' $P1172 = "38_1336232581.02998" 
+    .const 'Sub' $P1172 = "38_1336235025.56877" 
     capture_lex $P1172
-    .const 'Sub' $P1164 = "37_1336232581.02998" 
+    .const 'Sub' $P1164 = "37_1336235025.56877" 
     capture_lex $P1164
-    .const 'Sub' $P1151 = "35_1336232581.02998" 
+    .const 'Sub' $P1151 = "35_1336235025.56877" 
     capture_lex $P1151
-    .const 'Sub' $P1139 = "33_1336232581.02998" 
+    .const 'Sub' $P1139 = "33_1336235025.56877" 
     capture_lex $P1139
-    .const 'Sub' $P1127 = "32_1336232581.02998" 
+    .const 'Sub' $P1127 = "32_1336235025.56877" 
     capture_lex $P1127
-    .const 'Sub' $P1121 = "31_1336232581.02998" 
+    .const 'Sub' $P1121 = "31_1336235025.56877" 
     capture_lex $P1121
-    .const 'Sub' $P1110 = "30_1336232581.02998" 
+    .const 'Sub' $P1110 = "30_1336235025.56877" 
     capture_lex $P1110
-    .const 'Sub' $P1103 = "29_1336232581.02998" 
+    .const 'Sub' $P1103 = "29_1336235025.56877" 
     capture_lex $P1103
-    .const 'Sub' $P1095 = "28_1336232581.02998" 
+    .const 'Sub' $P1095 = "28_1336235025.56877" 
     capture_lex $P1095
-    .const 'Sub' $P1085 = "26_1336232581.02998" 
+    .const 'Sub' $P1085 = "26_1336235025.56877" 
     capture_lex $P1085
-    .const 'Sub' $P1075 = "24_1336232581.02998" 
+    .const 'Sub' $P1075 = "24_1336235025.56877" 
     capture_lex $P1075
-    .const 'Sub' $P1065 = "22_1336232581.02998" 
+    .const 'Sub' $P1065 = "22_1336235025.56877" 
     capture_lex $P1065
-    .const 'Sub' $P1060 = "21_1336232581.02998" 
+    .const 'Sub' $P1060 = "21_1336235025.56877" 
     capture_lex $P1060
-    .const 'Sub' $P1055 = "20_1336232581.02998" 
+    .const 'Sub' $P1055 = "20_1336235025.56877" 
     capture_lex $P1055
-    .const 'Sub' $P1043 = "19_1336232581.02998" 
+    .const 'Sub' $P1043 = "19_1336235025.56877" 
     capture_lex $P1043
-    .const 'Sub' $P1031 = "17_1336232581.02998" 
+    .const 'Sub' $P1031 = "17_1336235025.56877" 
     capture_lex $P1031
-    .const 'Sub' $P1026 = "16_1336232581.02998" 
+    .const 'Sub' $P1026 = "16_1336235025.56877" 
     capture_lex $P1026
-    .const 'Sub' $P1016 = "14_1336232581.02998" 
+    .const 'Sub' $P1016 = "14_1336235025.56877" 
     capture_lex $P1016
-    .const 'Sub' $P1011 = "13_1336232581.02998" 
+    .const 'Sub' $P1011 = "13_1336235025.56877" 
     capture_lex $P1011
-    .const 'Sub' $P1004 = "12_1336232581.02998" 
+    .const 'Sub' $P1004 = "12_1336235025.56877" 
     capture_lex $P1004
     $P0 = find_dynamic_lex "$*CTXSAVE"
     if null $P0 goto ctxsave_done
@@ -124,18 +124,18 @@
     $P0."ctxsave"()
   ctxsave_done:
 .annotate 'line', 424
-    .const 'Sub' $P1316 = "62_1336232581.02998" 
+    .const 'Sub' $P1316 = "62_1336235025.56877" 
     newclosure $P1321, $P1316
 .annotate 'line', 3
     .return ($P1321)
-    .const 'Sub' $P1323 = "63_1336232581.02998" 
+    .const 'Sub' $P1323 = "63_1336235025.56877" 
     .return ($P1323)
 .end
 
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "TOP"  :subid("12_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "TOP"  :subid("12_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1007
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 3
@@ -188,7 +188,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "begin_TOP"  :subid("13_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "begin_TOP"  :subid("13_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1014
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 11
@@ -232,11 +232,11 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "statement_list"  :subid("14_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "statement_list"  :subid("14_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1019
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 24
-    .const 'Sub' $P1023 = "15_1336232581.02998" 
+    .const 'Sub' $P1023 = "15_1336235025.56877" 
     capture_lex $P1023
     new $P1018, 'ExceptionHandler', [.CONTROL_RETURN]
     set_label $P1018, control_1017
@@ -270,7 +270,7 @@
     unless $P101, loop1025_done
     shift $P103, $P101
   loop1025_redo:
-    .const 'Sub' $P1023 = "15_1336232581.02998" 
+    .const 'Sub' $P1023 = "15_1336235025.56877" 
     capture_lex $P1023
     $P1023($P103)
   loop1025_next:
@@ -300,7 +300,7 @@
 
 
 .namespace ["blu";"Actions"]
-.sub "_block1022"  :anon :subid("15_1336232581.02998") :outer("14_1336232581.02998")
+.sub "_block1022"  :anon :subid("15_1336235025.56877") :outer("14_1336235025.56877")
     .param pmc param_1024
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 26
@@ -315,7 +315,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "begin_block"  :subid("16_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "begin_block"  :subid("16_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1029
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 37
@@ -360,11 +360,11 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "block"  :subid("17_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "block"  :subid("17_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1034
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 46
-    .const 'Sub' $P1040 = "18_1336232581.02998" 
+    .const 'Sub' $P1040 = "18_1336235025.56877" 
     capture_lex $P1040
     new $P1033, 'ExceptionHandler', [.CONTROL_RETURN]
     set_label $P1033, control_1032
@@ -423,7 +423,7 @@
     unless $P102, loop1042_done
     shift $P104, $P102
   loop1042_redo:
-    .const 'Sub' $P1040 = "18_1336232581.02998" 
+    .const 'Sub' $P1040 = "18_1336235025.56877" 
     capture_lex $P1040
     $P1040($P104)
   loop1042_next:
@@ -453,7 +453,7 @@
 
 
 .namespace ["blu";"Actions"]
-.sub "_block1039"  :anon :subid("18_1336232581.02998") :outer("17_1336232581.02998")
+.sub "_block1039"  :anon :subid("18_1336235025.56877") :outer("17_1336235025.56877")
     .param pmc param_1041
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 52
@@ -470,7 +470,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "statement:sym<if>"  :subid("19_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "statement:sym<if>"  :subid("19_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1046
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 79
@@ -556,7 +556,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "statement:sym<throw>"  :subid("20_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "statement:sym<throw>"  :subid("20_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1058
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 91
@@ -592,7 +592,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "statement:sym<return>"  :subid("21_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "statement:sym<return>"  :subid("21_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1063
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 97
@@ -630,11 +630,11 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "statement:sym<say>"  :subid("22_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "statement:sym<say>"  :subid("22_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1068
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 104
-    .const 'Sub' $P1072 = "23_1336232581.02998" 
+    .const 'Sub' $P1072 = "23_1336235025.56877" 
     capture_lex $P1072
     new $P1067, 'ExceptionHandler', [.CONTROL_RETURN]
     set_label $P1067, control_1066
@@ -668,7 +668,7 @@
     unless $P101, loop1074_done
     shift $P103, $P101
   loop1074_redo:
-    .const 'Sub' $P1072 = "23_1336232581.02998" 
+    .const 'Sub' $P1072 = "23_1336235025.56877" 
     capture_lex $P1072
     $P1072($P103)
   loop1074_next:
@@ -698,7 +698,7 @@
 
 
 .namespace ["blu";"Actions"]
-.sub "_block1071"  :anon :subid("23_1336232581.02998") :outer("22_1336232581.02998")
+.sub "_block1071"  :anon :subid("23_1336235025.56877") :outer("22_1336235025.56877")
     .param pmc param_1073
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 106
@@ -713,11 +713,11 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "statement:sym<print>"  :subid("24_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "statement:sym<print>"  :subid("24_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1078
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 109
-    .const 'Sub' $P1082 = "25_1336232581.02998" 
+    .const 'Sub' $P1082 = "25_1336235025.56877" 
     capture_lex $P1082
     new $P1077, 'ExceptionHandler', [.CONTROL_RETURN]
     set_label $P1077, control_1076
@@ -751,7 +751,7 @@
     unless $P101, loop1084_done
     shift $P103, $P101
   loop1084_redo:
-    .const 'Sub' $P1082 = "25_1336232581.02998" 
+    .const 'Sub' $P1082 = "25_1336235025.56877" 
     capture_lex $P1082
     $P1082($P103)
   loop1084_next:
@@ -781,7 +781,7 @@
 
 
 .namespace ["blu";"Actions"]
-.sub "_block1081"  :anon :subid("25_1336232581.02998") :outer("24_1336232581.02998")
+.sub "_block1081"  :anon :subid("25_1336235025.56877") :outer("24_1336235025.56877")
     .param pmc param_1083
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 111
@@ -796,11 +796,11 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "statement:sym<write>"  :subid("26_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "statement:sym<write>"  :subid("26_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1088
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 115
-    .const 'Sub' $P1092 = "27_1336232581.02998" 
+    .const 'Sub' $P1092 = "27_1336235025.56877" 
     capture_lex $P1092
     new $P1087, 'ExceptionHandler', [.CONTROL_RETURN]
     set_label $P1087, control_1086
@@ -834,7 +834,7 @@
     unless $P101, loop1094_done
     shift $P103, $P101
   loop1094_redo:
-    .const 'Sub' $P1092 = "27_1336232581.02998" 
+    .const 'Sub' $P1092 = "27_1336235025.56877" 
     capture_lex $P1092
     $P1092($P103)
   loop1094_next:
@@ -864,7 +864,7 @@
 
 
 .namespace ["blu";"Actions"]
-.sub "_block1091"  :anon :subid("27_1336232581.02998") :outer("26_1336232581.02998")
+.sub "_block1091"  :anon :subid("27_1336235025.56877") :outer("26_1336235025.56877")
     .param pmc param_1093
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 117
@@ -879,7 +879,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "statement:sym<while>"  :subid("28_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "statement:sym<while>"  :subid("28_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1098
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 122
@@ -938,7 +938,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "statement:sym<do>"  :subid("29_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "statement:sym<do>"  :subid("29_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1106
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 129
@@ -991,7 +991,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "statement:sym<try>"  :subid("30_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "statement:sym<try>"  :subid("30_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1113
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 136
@@ -1105,7 +1105,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "exception"  :subid("31_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "exception"  :subid("31_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1124
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 159
@@ -1144,7 +1144,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "statement:sym<var>"  :subid("32_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "statement:sym<var>"  :subid("32_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1130
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 179
@@ -1261,11 +1261,11 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "primary"  :subid("33_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "primary"  :subid("33_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1142
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 209
-    .const 'Sub' $P1147 = "34_1336232581.02998" 
+    .const 'Sub' $P1147 = "34_1336235025.56877" 
     capture_lex $P1147
     new $P1141, 'ExceptionHandler', [.CONTROL_RETURN]
     set_label $P1141, control_1140
@@ -1305,7 +1305,7 @@
     unless $P101, loop1150_done
     shift $P103, $P101
   loop1150_redo:
-    .const 'Sub' $P1147 = "34_1336232581.02998" 
+    .const 'Sub' $P1147 = "34_1336235025.56877" 
     capture_lex $P1147
     $P1147($P103)
   loop1150_next:
@@ -1335,7 +1335,7 @@
 
 
 .namespace ["blu";"Actions"]
-.sub "_block1146"  :anon :subid("34_1336232581.02998") :outer("33_1336232581.02998")
+.sub "_block1146"  :anon :subid("34_1336235025.56877") :outer("33_1336235025.56877")
     .param pmc param_1149
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 214
@@ -1360,11 +1360,11 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "identifier"  :subid("35_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "identifier"  :subid("35_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1154
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 227
-    .const 'Sub' $P1160 = "36_1336232581.02998" 
+    .const 'Sub' $P1160 = "36_1336235025.56877" 
     capture_lex $P1160
     new $P1153, 'ExceptionHandler', [.CONTROL_RETURN]
     set_label $P1153, control_1152
@@ -1413,7 +1413,7 @@
     unless $P102, loop1163_done
     shift $P104, $P102
   loop1163_redo:
-    .const 'Sub' $P1160 = "36_1336232581.02998" 
+    .const 'Sub' $P1160 = "36_1336235025.56877" 
     capture_lex $P1160
     $P1160($P104)
   loop1163_next:
@@ -1447,7 +1447,7 @@
 
 
 .namespace ["blu";"Actions"]
-.sub "_block1159"  :anon :subid("36_1336232581.02998") :outer("35_1336232581.02998")
+.sub "_block1159"  :anon :subid("36_1336235025.56877") :outer("35_1336235025.56877")
     .param pmc param_1161
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 232
@@ -1474,7 +1474,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "stat_or_def"  :subid("37_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "stat_or_def"  :subid("37_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1167
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 246
@@ -1499,7 +1499,7 @@
     unless_null $P1171, vivify_138
     $P1171 = root_new ['parrot';'Hash']
   vivify_138:
-    set $P103, $P1171["sub_definition"]
+    set $P103, $P1171["fn_definition"]
     unless_null $P103, vivify_139
     new $P103, "Undef"
   vivify_139:
@@ -1537,11 +1537,11 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "parameters"  :subid("38_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "parameters"  :subid("38_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1175
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 255
-    .const 'Sub' $P1180 = "39_1336232581.02998" 
+    .const 'Sub' $P1180 = "39_1336235025.56877" 
     capture_lex $P1180
     new $P1174, 'ExceptionHandler', [.CONTROL_RETURN]
     set_label $P1174, control_1173
@@ -1591,7 +1591,7 @@
     unless $P102, loop1183_done
     shift $P104, $P102
   loop1183_redo:
-    .const 'Sub' $P1180 = "39_1336232581.02998" 
+    .const 'Sub' $P1180 = "39_1336235025.56877" 
     capture_lex $P1180
     $P1180($P104)
   loop1183_next:
@@ -1628,7 +1628,7 @@
 
 
 .namespace ["blu";"Actions"]
-.sub "_block1179"  :anon :subid("39_1336232581.02998") :outer("38_1336232581.02998")
+.sub "_block1179"  :anon :subid("39_1336235025.56877") :outer("38_1336235025.56877")
     .param pmc param_1182
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 262
@@ -1658,11 +1658,11 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "sub_definition"  :subid("40_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "fn_definition"  :subid("40_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1187
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 274
-    .const 'Sub' $P1195 = "41_1336232581.02998" 
+    .const 'Sub' $P1195 = "41_1336235025.56877" 
     capture_lex $P1195
     new $P1186, 'ExceptionHandler', [.CONTROL_RETURN]
     set_label $P1186, control_1185
@@ -1738,7 +1738,7 @@
     unless $P103, loop1197_done
     shift $P105, $P103
   loop1197_redo:
-    .const 'Sub' $P1195 = "41_1336232581.02998" 
+    .const 'Sub' $P1195 = "41_1336235025.56877" 
     capture_lex $P1195
     $P1195($P105)
   loop1197_next:
@@ -1784,7 +1784,7 @@
 
 
 .namespace ["blu";"Actions"]
-.sub "_block1194"  :anon :subid("41_1336232581.02998") :outer("40_1336232581.02998")
+.sub "_block1194"  :anon :subid("41_1336235025.56877") :outer("40_1336235025.56877")
     .param pmc param_1196
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 282
@@ -1801,7 +1801,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "statement:sym<sub_call>"  :subid("42_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "statement:sym<fn_call>"  :subid("42_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1202
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 292
@@ -1860,7 +1860,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "term:sym<term_sub_call>"  :subid("43_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "term:sym<term_fn_call>"  :subid("43_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1210
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 298
@@ -1919,11 +1919,11 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "arguments"  :subid("44_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "arguments"  :subid("44_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1218
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 305
-    .const 'Sub' $P1222 = "45_1336232581.02998" 
+    .const 'Sub' $P1222 = "45_1336235025.56877" 
     capture_lex $P1222
     new $P1217, 'ExceptionHandler', [.CONTROL_RETURN]
     set_label $P1217, control_1216
@@ -1957,7 +1957,7 @@
     unless $P101, loop1224_done
     shift $P103, $P101
   loop1224_redo:
-    .const 'Sub' $P1222 = "45_1336232581.02998" 
+    .const 'Sub' $P1222 = "45_1336235025.56877" 
     capture_lex $P1222
     $P1222($P103)
   loop1224_next:
@@ -1987,7 +1987,7 @@
 
 
 .namespace ["blu";"Actions"]
-.sub "_block1221"  :anon :subid("45_1336232581.02998") :outer("44_1336232581.02998")
+.sub "_block1221"  :anon :subid("45_1336235025.56877") :outer("44_1336235025.56877")
     .param pmc param_1223
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 307
@@ -2004,7 +2004,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "statement:sym<assignment>"  :subid("46_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "statement:sym<assignment>"  :subid("46_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1228
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 314
@@ -2066,7 +2066,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "term:sym<integer_constant>"  :subid("47_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "term:sym<integer_constant>"  :subid("47_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1236
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 324
@@ -2101,7 +2101,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "term:sym<floating_point_constant>"  :subid("48_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "term:sym<floating_point_constant>"  :subid("48_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1241
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 328
@@ -2129,7 +2129,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "string_constant"  :subid("49_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "string_constant"  :subid("49_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1245
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 333
@@ -2171,7 +2171,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "term:sym<string_constant>"  :subid("50_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "term:sym<string_constant>"  :subid("50_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1251
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 339
@@ -2204,7 +2204,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "named_field"  :subid("51_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "named_field"  :subid("51_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1256
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 343
@@ -2263,11 +2263,11 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "circumfix:sym<[ ]>"  :subid("52_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "circumfix:sym<[ ]>"  :subid("52_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1264
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 351
-    .const 'Sub' $P1268 = "53_1336232581.02998" 
+    .const 'Sub' $P1268 = "53_1336235025.56877" 
     capture_lex $P1268
     new $P1263, 'ExceptionHandler', [.CONTROL_RETURN]
     set_label $P1263, control_1262
@@ -2301,7 +2301,7 @@
     unless $P101, loop1270_done
     shift $P103, $P101
   loop1270_redo:
-    .const 'Sub' $P1268 = "53_1336232581.02998" 
+    .const 'Sub' $P1268 = "53_1336235025.56877" 
     capture_lex $P1268
     $P1268($P103)
   loop1270_next:
@@ -2331,7 +2331,7 @@
 
 
 .namespace ["blu";"Actions"]
-.sub "_block1267"  :anon :subid("53_1336232581.02998") :outer("52_1336232581.02998")
+.sub "_block1267"  :anon :subid("53_1336235025.56877") :outer("52_1336235025.56877")
     .param pmc param_1269
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 357
@@ -2348,11 +2348,11 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "circumfix:sym<{ }>"  :subid("54_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "circumfix:sym<{ }>"  :subid("54_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1274
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 364
-    .const 'Sub' $P1278 = "55_1336232581.02998" 
+    .const 'Sub' $P1278 = "55_1336235025.56877" 
     capture_lex $P1278
     new $P1273, 'ExceptionHandler', [.CONTROL_RETURN]
     set_label $P1273, control_1272
@@ -2386,7 +2386,7 @@
     unless $P101, loop1280_done
     shift $P103, $P101
   loop1280_redo:
-    .const 'Sub' $P1278 = "55_1336232581.02998" 
+    .const 'Sub' $P1278 = "55_1336235025.56877" 
     capture_lex $P1278
     $P1278($P103)
   loop1280_next:
@@ -2416,7 +2416,7 @@
 
 
 .namespace ["blu";"Actions"]
-.sub "_block1277"  :anon :subid("55_1336232581.02998") :outer("54_1336232581.02998")
+.sub "_block1277"  :anon :subid("55_1336235025.56877") :outer("54_1336235025.56877")
     .param pmc param_1279
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 370
@@ -2433,7 +2433,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "postfix_expression:sym<member>"  :subid("56_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "postfix_expression:sym<member>"  :subid("56_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1284
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 377
@@ -2489,7 +2489,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "term:sym<primary>"  :subid("57_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "term:sym<primary>"  :subid("57_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1291
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 394
@@ -2522,7 +2522,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "postfix_expression:sym<index>"  :subid("58_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "postfix_expression:sym<index>"  :subid("58_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1296
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 398
@@ -2572,7 +2572,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "postfix_expression:sym<key>"  :subid("59_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "postfix_expression:sym<key>"  :subid("59_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1303
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 410
@@ -2614,7 +2614,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "quote:sym<'>"  :subid("60_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "quote:sym<'>"  :subid("60_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1309
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 421
@@ -2645,7 +2645,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "quote:sym<\">"  :subid("61_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "quote:sym<\">"  :subid("61_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1314
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 422
@@ -2676,7 +2676,7 @@
 
 .namespace ["blu";"Actions"]
 .include "except_types.pasm"
-.sub "circumfix:sym<( )>"  :subid("62_1336232581.02998") :method :outer("11_1336232581.02998")
+.sub "circumfix:sym<( )>"  :subid("62_1336235025.56877") :method :outer("11_1336235025.56877")
     .param pmc param_1319
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 424
@@ -2706,20 +2706,20 @@
 
 
 .namespace ["blu";"Actions"]
-.sub "_block1322" :load :anon :subid("63_1336232581.02998")
+.sub "_block1322" :load :anon :subid("63_1336235025.56877")
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 3
-    .const '' $P1324 = "11_1336232581.02998" 
+    .const '' $P1324 = "11_1336235025.56877" 
     $P100 = $P1324()
     .return ($P100)
 .end
 
 
 .namespace []
-.sub "_block1325" :load :anon :subid("64_1336232581.02998")
+.sub "_block1325" :load :anon :subid("64_1336235025.56877")
 .annotate 'file', "src/blu/Actions.pm"
 .annotate 'line', 1
-    .const '' $P1327 = "10_1336232581.02998" 
+    .const '' $P1327 = "10_1336235025.56877" 
     $P100 = $P1327()
     .return ($P100)
 .end

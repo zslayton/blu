@@ -1,4 +1,4 @@
-sub fib(n)
+fn fib(n)
 	if n <= 1 then
 		return n
 	else
