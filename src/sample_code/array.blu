@@ -1,0 +1,22 @@
+sub print_array(name, array, len)
+	print "===================="
+	print " Array '", name, "'"
+	print "===================="
+	if len < 1 then
+		print "   <Empty>"
+	else
+		var m = 0
+		while m < len do
+			print "   [", m, "] --> ", array[m]
+			m = m + 1
+		end
+	end
+end
+
+x = []
+y = [1, 2, 3, 'four']
+z = ['animal', 'vegetable', 'mineral']
+
+print_array("x", x, 0)
+print_array("y", y, 4)
+print_array("z", z, 3)

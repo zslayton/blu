@@ -10,6 +10,14 @@
     }
 }
 
+sub length($arg) {
+	if (pir::does($arg, "array" || pir::does($arg, "hash")
+	{
+		return pir::elements($arg);
+	}
+	return 1;
+}
+
 sub print(*@args) {
     pir::print(pir::join('', @args));
     1;
