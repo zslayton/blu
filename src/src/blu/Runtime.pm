@@ -7,12 +7,13 @@
         set_global '!array', $P0
         $P0 = find_lex 'hash'
         set_global '!hash', $P0
+        $P0 = find_lex 'length'
+        set_global 'len', $P0
     }
 }
 
 sub length($arg) {
-	if (pir::does($arg, "array" || pir::does($arg, "hash")
-	{
+	if (pir::does($arg, "array") || pir::does($arg, "hash")) {
 		return pir::elements($arg);
 	}
 	return 1;

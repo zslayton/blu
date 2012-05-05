@@ -94,6 +94,13 @@ method statement:sym<throw>($/) {
                            :node($/) );
 }
 
+method statement:sym<return>($/) {
+	make PAST::Op.new( 	:pirop<return>, 
+				$<EXPR>.ast,
+				:node($/)
+			 );
+}
+
 method statement:sym<say>($/) {
     my $past := PAST::Op.new( :name<say>, :pasttype<call>, :node($/) );
     for $<EXPR> { $past.push( $_.ast ); }
@@ -278,10 +285,17 @@ method sub_definition($/) {
 
 	@?BLOCK.shift();
 	$?BLOCK := @?BLOCK[0];
+	$past.control('return_pir');
 	make $past;
 }
 
 method statement:sym<sub_call>($/) {
+	my $invocant := $<primary>.ast;
+	my $past := $<arguments>.ast;
+	$past.unshift($invocant);
+	make $past;
+}
+method term:sym<term_sub_call>($/) {
 	my $invocant := $<primary>.ast;
 	my $past := $<arguments>.ast;
 	$past.unshift($invocant);

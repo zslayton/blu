@@ -1,0 +1,35 @@
+sub wrap(str, tag)
+	return "<"..tag..">\n"..str.."\n</"..tag..">"
+end
+
+sub table(str)
+	return wrap(str, 'table')
+end
+
+sub col(str)
+	return wrap(str, 'td')
+end
+
+sub row(str)
+	return wrap(str, 'tr')
+end
+
+sub body(str)
+	return wrap(str, 'body')
+end
+
+sub html(str)
+	return wrap(str, 'html')
+end
+
+cells = ['a', 'b', 'c', 'd', 'e', 'f']
+
+var markup = ''
+x = 0
+while x < len(cells) do
+	markup = markup .. row(col(cells[x]))
+	x = x + 1
+end
+
+markup = html(body(table(markup)))
+print(markup)

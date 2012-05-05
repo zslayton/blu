@@ -1,0 +1,8 @@
+x = 1
+print len(x)
+x = 3.4
+print len(x)
+x = [1, 2, 3, 4, 5]
+print len(x)
+x = {'one' : 1, 'two' : 2, 'three' : 3}
+print len(x)

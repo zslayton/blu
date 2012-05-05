@@ -1,0 +1,13 @@
+sub fib(n)
+	if n <= 1 then
+		return n
+	else
+		return fib(n - 1) + fib(n - 2)
+	end
+end
+
+x = 0
+while x < 10 do
+	print 'fib(',x,') --> ',fib(x)
+	x = x + 1
+end

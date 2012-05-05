@@ -64,6 +64,10 @@ rule stat_or_def {
 rule statement:sym<sub_call> {
 	<primary> <arguments>
 }
+# Necessary for x = sub_call() type statements
+rule term:sym<term_sub_call> {
+	<primary> <arguments>
+}
 
 rule arguments {
 	'(' [<EXPR> ** ',']? ')'
@@ -80,6 +84,10 @@ rule statement:sym<var> {
 rule statement:sym<assignment>
 {
 	<primary> '=' <EXPR>
+}
+
+rule statement:sym<return> {
+	<sym> <EXPR>
 }
 
 #rule assignment {
@@ -156,7 +164,7 @@ token identifier {
 
 token keyword {
 	['and'|'catch'|'do'   |'else' |'end' |'for' |'if'
-	|'not'|'or'   |'sub'  |'throw'|'try' |'var'|'while']>>
+	|'not'|'or'|'return'|'sub' |'throw'|'try' |'var'|'while']>>
 }
 
 token term:sym<primary> {
