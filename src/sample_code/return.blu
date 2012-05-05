@@ -24,7 +24,7 @@ end
 
 cells = ['a', 'b', 'c', 'd', 'e', 'f']
 
-var markup = ''
+local markup = ''
 x = 0
 while x < len(cells) do
 	markup = markup .. row(col(cells[x]))

@@ -5,7 +5,7 @@ fn print_array(name, array, len)
 	if len < 1 then
 		print "   <Empty>"
 	else
-		var m = 0
+		local m = 0
 		while m < len do
 			print "   [", m, "] --> ", array[m]
 			m = m + 1

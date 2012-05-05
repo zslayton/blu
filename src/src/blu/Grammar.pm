@@ -75,7 +75,7 @@ rule arguments {
 
 # ch 5
 
-rule statement:sym<var> {
+rule statement:sym<local> {
 	<sym> <identifier> ['=' <EXPR>]?
 }
 
@@ -164,7 +164,7 @@ token identifier {
 
 token keyword {
 	['and'|'catch'|'do'   |'else' |'end' |'for' |'if'
-	|'not'|'or'|'return'|'fn' |'throw'|'try' |'var'|'while']>>
+	|'not'|'or'|'return'|'fn' |'throw'|'try' |'local'|'while']>>
 }
 
 token term:sym<primary> {

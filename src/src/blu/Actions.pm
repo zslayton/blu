@@ -176,7 +176,7 @@ method exception($/) {
 #	make $past;
 #}
 
-method statement:sym<var>($/) {
+method statement:sym<local>($/) {
 	our $?BLOCK;
 
 	my $past := $<identifier>.ast;

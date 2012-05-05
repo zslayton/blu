@@ -8,14 +8,14 @@ print "global y = ", y
 print "--------------------------"
 print "Entering lexical 'x' block"
 do
-	var x = 42
+	local x = 42
 	print "lexical x = ", x
 end
 
 print "--------------------------"
 print "Entering lexical 'y' block"
 do
-	var y = 2
+	local y = 2
 	print "lexical y = ", y
 end
 
