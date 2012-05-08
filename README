@@ -3,3 +3,26 @@ The Blu Shell (BluSH)
 ======================
 
 This shell currently offers functionality comparable to Squaak.
+
+---------------
+Building Blu
+---------------
+
+This project was built using Parrot v4.0.0. Before building Blu,
+please ensure that Parrot is on your system and its executables
+are located on your $PATH.
+
+To build Blu, run:
+
+cd src
+parrot setup.pir
+
+---------------
+Running Blu
+---------------
+
+To execute a file written in Blu, run:
+
+./installable_blu [filename.blu]
+
+A number of example programs may be found in the sample_code directory.
