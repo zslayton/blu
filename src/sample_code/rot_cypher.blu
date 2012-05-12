@@ -1,12 +1,3 @@
-# ASCII / UTF8 Values
-
-print 'A: ', ord('A')
-print 'Z: ', ord('Z')
-print 'a: ', ord('a')
-print 'z: ', ord('z')
-print '0: ', ord('0')
-print '9: ', ord('9')
-
 fn make_wheel(low_ch, high_ch)
 	local wheel = []
 	local m = 0
@@ -85,7 +76,7 @@ end
 fn chomp(line)
         local last = strlen(line) - 1
         if substr(line, last, 1) == "\n" then
-                print "~Chomped!~"
+                #print "~Chomped!~"
         else
                 last = last + 1
         end
@@ -97,18 +88,25 @@ print '=================='
 print '    ROT Cypher    '
 print '=================='
 
+cache = {}
 line = 1
 while line do
 	write "String to ROTate?: "
 	line = readline()
-	line = chomp(line)
 	if line then
+		line = chomp(line)
 		write "ROTation offset? : "
 		offset = readnum()
 		if offset != 0 then
-			rot(line, offset)
+			local key = line .. offset
+			if has_key(cache, key) then
+				print "Cached answer: ", cache{key}
+			else
+				cache{key} = rot(line, offset)
+			end
 		else
 			line = 0
 		end
 	end
 end
+write "\n"

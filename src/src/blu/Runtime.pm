@@ -47,6 +47,16 @@ sub readline() {
         $STDIN.readline();
 }
 
+sub num($string)
+{
+	return +$string;
+}
+
+sub str($num)
+{
+	return ~$num;
+}
+
 sub substr($string, $index, $num) {
 	return pir::substr($string, $index, $num);
 }
