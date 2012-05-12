@@ -1,9 +1,9 @@
 
 .namespace []
-.sub "_block1000"  :anon :subid("10_1336240136.60998")
+.sub "_block1000"  :anon :subid("10_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 0
-    .const 'Sub' $P1003 = "11_1336240136.60998" 
+    .const 'Sub' $P1003 = "11_1336790520.7162" 
     capture_lex $P1003
 .annotate 'line', 1
     $P0 = find_dynamic_lex "$*CTXSAVE"
@@ -13,21 +13,21 @@
     $P0."ctxsave"()
   ctxsave_done:
 .annotate 'line', 10
-    .const 'Sub' $P1003 = "11_1336240136.60998" 
+    .const 'Sub' $P1003 = "11_1336790520.7162" 
     capture_lex $P1003
     $P101 = $P1003()
 .annotate 'line', 1
     .return ($P101)
-    .const 'Sub' $P1314 = "133_1336240136.60998" 
+    .const 'Sub' $P1314 = "133_1336790520.7162" 
     .return ($P1314)
 .end
 
 
 .namespace []
-.sub "" :load :init :subid("post134") :outer("10_1336240136.60998")
+.sub "" :load :init :subid("post134") :outer("10_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 0
-    .const 'Sub' $P1001 = "10_1336240136.60998" 
+    .const 'Sub' $P1001 = "10_1336790520.7162" 
     .local pmc block
     set block, $P1001
     $P1316 = get_root_global ["parrot"], "P6metaclass"
@@ -36,122 +36,122 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "_block1002"  :subid("11_1336240136.60998") :outer("10_1336240136.60998")
+.sub "_block1002"  :subid("11_1336790520.7162") :outer("10_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
-    .const 'Sub' $P1305 = "130_1336240136.60998" 
+    .const 'Sub' $P1305 = "130_1336790520.7162" 
     capture_lex $P1305
-    .const 'Sub' $P1300 = "128_1336240136.60998" 
+    .const 'Sub' $P1300 = "128_1336790520.7162" 
     capture_lex $P1300
-    .const 'Sub' $P1295 = "126_1336240136.60998" 
+    .const 'Sub' $P1295 = "126_1336790520.7162" 
     capture_lex $P1295
-    .const 'Sub' $P1290 = "124_1336240136.60998" 
+    .const 'Sub' $P1290 = "124_1336790520.7162" 
     capture_lex $P1290
-    .const 'Sub' $P1285 = "122_1336240136.60998" 
+    .const 'Sub' $P1285 = "122_1336790520.7162" 
     capture_lex $P1285
-    .const 'Sub' $P1280 = "120_1336240136.60998" 
+    .const 'Sub' $P1280 = "120_1336790520.7162" 
     capture_lex $P1280
-    .const 'Sub' $P1275 = "118_1336240136.60998" 
+    .const 'Sub' $P1275 = "118_1336790520.7162" 
     capture_lex $P1275
-    .const 'Sub' $P1270 = "116_1336240136.60998" 
+    .const 'Sub' $P1270 = "116_1336790520.7162" 
     capture_lex $P1270
-    .const 'Sub' $P1265 = "114_1336240136.60998" 
+    .const 'Sub' $P1265 = "114_1336790520.7162" 
     capture_lex $P1265
-    .const 'Sub' $P1260 = "112_1336240136.60998" 
+    .const 'Sub' $P1260 = "112_1336790520.7162" 
     capture_lex $P1260
-    .const 'Sub' $P1255 = "110_1336240136.60998" 
+    .const 'Sub' $P1255 = "110_1336790520.7162" 
     capture_lex $P1255
-    .const 'Sub' $P1250 = "108_1336240136.60998" 
+    .const 'Sub' $P1250 = "108_1336790520.7162" 
     capture_lex $P1250
-    .const 'Sub' $P1245 = "106_1336240136.60998" 
+    .const 'Sub' $P1245 = "106_1336790520.7162" 
     capture_lex $P1245
-    .const 'Sub' $P1240 = "104_1336240136.60998" 
+    .const 'Sub' $P1240 = "104_1336790520.7162" 
     capture_lex $P1240
-    .const 'Sub' $P1235 = "102_1336240136.60998" 
+    .const 'Sub' $P1235 = "102_1336790520.7162" 
     capture_lex $P1235
-    .const 'Sub' $P1230 = "100_1336240136.60998" 
+    .const 'Sub' $P1230 = "100_1336790520.7162" 
     capture_lex $P1230
-    .const 'Sub' $P1226 = "98_1336240136.60998" 
+    .const 'Sub' $P1226 = "98_1336790520.7162" 
     capture_lex $P1226
-    .const 'Sub' $P1222 = "96_1336240136.60998" 
+    .const 'Sub' $P1222 = "96_1336790520.7162" 
     capture_lex $P1222
-    .const 'Sub' $P1218 = "94_1336240136.60998" 
+    .const 'Sub' $P1218 = "94_1336790520.7162" 
     capture_lex $P1218
-    .const 'Sub' $P1212 = "90_1336240136.60998" 
+    .const 'Sub' $P1212 = "90_1336790520.7162" 
     capture_lex $P1212
-    .const 'Sub' $P1208 = "88_1336240136.60998" 
+    .const 'Sub' $P1208 = "88_1336790520.7162" 
     capture_lex $P1208
-    .const 'Sub' $P1204 = "86_1336240136.60998" 
+    .const 'Sub' $P1204 = "86_1336790520.7162" 
     capture_lex $P1204
-    .const 'Sub' $P1195 = "84_1336240136.60998" 
+    .const 'Sub' $P1195 = "84_1336790520.7162" 
     capture_lex $P1195
-    .const 'Sub' $P1186 = "82_1336240136.60998" 
+    .const 'Sub' $P1186 = "82_1336790520.7162" 
     capture_lex $P1186
-    .const 'Sub' $P1181 = "80_1336240136.60998" 
+    .const 'Sub' $P1181 = "80_1336790520.7162" 
     capture_lex $P1181
-    .const 'Sub' $P1177 = "78_1336240136.60998" 
+    .const 'Sub' $P1177 = "78_1336790520.7162" 
     capture_lex $P1177
-    .const 'Sub' $P1169 = "76_1336240136.60998" 
+    .const 'Sub' $P1169 = "76_1336790520.7162" 
     capture_lex $P1169
-    .const 'Sub' $P1161 = "74_1336240136.60998" 
+    .const 'Sub' $P1161 = "74_1336790520.7162" 
     capture_lex $P1161
-    .const 'Sub' $P1153 = "72_1336240136.60998" 
+    .const 'Sub' $P1153 = "72_1336790520.7162" 
     capture_lex $P1153
-    .const 'Sub' $P1149 = "70_1336240136.60998" 
+    .const 'Sub' $P1149 = "70_1336790520.7162" 
     capture_lex $P1149
-    .const 'Sub' $P1144 = "68_1336240136.60998" 
+    .const 'Sub' $P1144 = "68_1336790520.7162" 
     capture_lex $P1144
-    .const 'Sub' $P1140 = "66_1336240136.60998" 
+    .const 'Sub' $P1140 = "66_1336790520.7162" 
     capture_lex $P1140
-    .const 'Sub' $P1136 = "64_1336240136.60998" 
+    .const 'Sub' $P1136 = "64_1336790520.7162" 
     capture_lex $P1136
-    .const 'Sub' $P1132 = "62_1336240136.60998" 
+    .const 'Sub' $P1132 = "62_1336790520.7162" 
     capture_lex $P1132
-    .const 'Sub' $P1128 = "60_1336240136.60998" 
+    .const 'Sub' $P1128 = "60_1336790520.7162" 
     capture_lex $P1128
-    .const 'Sub' $P1120 = "56_1336240136.60998" 
+    .const 'Sub' $P1120 = "56_1336790520.7162" 
     capture_lex $P1120
-    .const 'Sub' $P1115 = "54_1336240136.60998" 
+    .const 'Sub' $P1115 = "54_1336790520.7162" 
     capture_lex $P1115
-    .const 'Sub' $P1106 = "52_1336240136.60998" 
+    .const 'Sub' $P1106 = "52_1336790520.7162" 
     capture_lex $P1106
-    .const 'Sub' $P1100 = "50_1336240136.60998" 
+    .const 'Sub' $P1100 = "50_1336790520.7162" 
     capture_lex $P1100
-    .const 'Sub' $P1094 = "48_1336240136.60998" 
+    .const 'Sub' $P1094 = "48_1336790520.7162" 
     capture_lex $P1094
-    .const 'Sub' $P1090 = "46_1336240136.60998" 
+    .const 'Sub' $P1090 = "46_1336790520.7162" 
     capture_lex $P1090
-    .const 'Sub' $P1085 = "44_1336240136.60998" 
+    .const 'Sub' $P1085 = "44_1336790520.7162" 
     capture_lex $P1085
-    .const 'Sub' $P1081 = "42_1336240136.60998" 
+    .const 'Sub' $P1081 = "42_1336790520.7162" 
     capture_lex $P1081
-    .const 'Sub' $P1076 = "40_1336240136.60998" 
+    .const 'Sub' $P1076 = "40_1336790520.7162" 
     capture_lex $P1076
-    .const 'Sub' $P1071 = "38_1336240136.60998" 
+    .const 'Sub' $P1071 = "38_1336790520.7162" 
     capture_lex $P1071
-    .const 'Sub' $P1065 = "36_1336240136.60998" 
+    .const 'Sub' $P1065 = "36_1336790520.7162" 
     capture_lex $P1065
-    .const 'Sub' $P1060 = "34_1336240136.60998" 
+    .const 'Sub' $P1060 = "34_1336790520.7162" 
     capture_lex $P1060
-    .const 'Sub' $P1056 = "32_1336240136.60998" 
+    .const 'Sub' $P1056 = "32_1336790520.7162" 
     capture_lex $P1056
-    .const 'Sub' $P1050 = "30_1336240136.60998" 
+    .const 'Sub' $P1050 = "30_1336790520.7162" 
     capture_lex $P1050
-    .const 'Sub' $P1041 = "28_1336240136.60998" 
+    .const 'Sub' $P1041 = "28_1336790520.7162" 
     capture_lex $P1041
-    .const 'Sub' $P1037 = "26_1336240136.60998" 
+    .const 'Sub' $P1037 = "26_1336790520.7162" 
     capture_lex $P1037
-    .const 'Sub' $P1033 = "24_1336240136.60998" 
+    .const 'Sub' $P1033 = "24_1336790520.7162" 
     capture_lex $P1033
-    .const 'Sub' $P1028 = "22_1336240136.60998" 
+    .const 'Sub' $P1028 = "22_1336790520.7162" 
     capture_lex $P1028
-    .const 'Sub' $P1020 = "18_1336240136.60998" 
+    .const 'Sub' $P1020 = "18_1336790520.7162" 
     capture_lex $P1020
-    .const 'Sub' $P1013 = "16_1336240136.60998" 
+    .const 'Sub' $P1013 = "16_1336790520.7162" 
     capture_lex $P1013
-    .const 'Sub' $P1009 = "14_1336240136.60998" 
+    .const 'Sub' $P1009 = "14_1336790520.7162" 
     capture_lex $P1009
-    .const 'Sub' $P1004 = "12_1336240136.60998" 
+    .const 'Sub' $P1004 = "12_1336790520.7162" 
     capture_lex $P1004
     $P0 = find_dynamic_lex "$*CTXSAVE"
     if null $P0 goto ctxsave_done
@@ -159,47 +159,47 @@
     unless $I0 goto ctxsave_done
     $P0."ctxsave"()
   ctxsave_done:
-    .const 'Sub' $P1305 = "130_1336240136.60998" 
+    .const 'Sub' $P1305 = "130_1336790520.7162" 
     capture_lex $P1305
     .return ($P1305)
-    .const 'Sub' $P1311 = "132_1336240136.60998" 
+    .const 'Sub' $P1311 = "132_1336790520.7162" 
     .return ($P1311)
 .end
 
 
 .namespace ["blu";"Grammar"]
-.sub "" :load :init :subid("post135") :outer("11_1336240136.60998")
+.sub "" :load :init :subid("post135") :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
-    .const 'Sub' $P1003 = "11_1336240136.60998" 
+    .const 'Sub' $P1003 = "11_1336790520.7162" 
     .local pmc block
     set block, $P1003
-.annotate 'line', 225
-    get_hll_global $P101, ["blu"], "Grammar"
-    $P101."O"(":prec<w>, :assoc<unary>", "%unary-negate")
-.annotate 'line', 226
-    get_hll_global $P101, ["blu"], "Grammar"
-    $P101."O"(":prec<v>, :assoc<unary>", "%unary-not")
-.annotate 'line', 227
-    get_hll_global $P101, ["blu"], "Grammar"
-    $P101."O"(":prec<u>, :assoc<left>", "%multiplicative")
-.annotate 'line', 228
-    get_hll_global $P101, ["blu"], "Grammar"
-    $P101."O"(":prec<t>, :assoc<left>", "%additive")
 .annotate 'line', 229
     get_hll_global $P101, ["blu"], "Grammar"
-    $P101."O"(":prec<s>, :assoc<left>", "%relational")
+    $P101."O"(":prec<w>, :assoc<unary>", "%unary-negate")
 .annotate 'line', 230
     get_hll_global $P101, ["blu"], "Grammar"
-    $P101."O"(":prec<r>, :assoc<left>", "%conjunction")
+    $P101."O"(":prec<v>, :assoc<unary>", "%unary-not")
 .annotate 'line', 231
+    get_hll_global $P101, ["blu"], "Grammar"
+    $P101."O"(":prec<u>, :assoc<left>", "%multiplicative")
+.annotate 'line', 232
+    get_hll_global $P101, ["blu"], "Grammar"
+    $P101."O"(":prec<t>, :assoc<left>", "%additive")
+.annotate 'line', 233
+    get_hll_global $P101, ["blu"], "Grammar"
+    $P101."O"(":prec<s>, :assoc<left>", "%relational")
+.annotate 'line', 234
+    get_hll_global $P101, ["blu"], "Grammar"
+    $P101."O"(":prec<r>, :assoc<left>", "%conjunction")
+.annotate 'line', 235
     get_hll_global $P101, ["blu"], "Grammar"
     $P101."O"(":prec<q>, :assoc<left>", "%disjunction")
 .end
 
 
 .namespace ["blu";"Grammar"]
-.sub "TOP"  :subid("12_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "TOP"  :subid("12_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1005_tgt
@@ -332,7 +332,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__TOP"  :subid("13_1336240136.60998") :method
+.sub "!PREFIX__TOP"  :subid("13_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -343,7 +343,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "begin_TOP"  :subid("14_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "begin_TOP"  :subid("14_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1010_tgt
@@ -409,7 +409,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__begin_TOP"  :subid("15_1336240136.60998") :method
+.sub "!PREFIX__begin_TOP"  :subid("15_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     new $P100, "ResizablePMCArray"
@@ -419,7 +419,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "ws"  :subid("16_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "ws"  :subid("16_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1014_tgt
@@ -540,7 +540,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__ws"  :subid("17_1336240136.60998") :method
+.sub "!PREFIX__ws"  :subid("17_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     new $P100, "ResizablePMCArray"
@@ -550,7 +550,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "statement_list"  :subid("18_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "statement_list"  :subid("18_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1021_tgt
@@ -652,7 +652,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__statement_list"  :subid("19_1336240136.60998") :method
+.sub "!PREFIX__statement_list"  :subid("19_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -663,7 +663,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "statement"  :subid("20_1336240136.60998") :method
+.sub "statement"  :subid("20_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 48
     $P100 = self."!protoregex"("statement")
@@ -672,7 +672,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__statement"  :subid("21_1336240136.60998") :method
+.sub "!PREFIX__statement"  :subid("21_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 48
     $P101 = self."!PREFIX__!protoregex"("statement")
@@ -681,7 +681,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "stat_or_def"  :subid("22_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "stat_or_def"  :subid("22_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1029_tgt
@@ -790,7 +790,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__stat_or_def"  :subid("23_1336240136.60998") :method
+.sub "!PREFIX__stat_or_def"  :subid("23_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -803,7 +803,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "statement:sym<fn_call>"  :subid("24_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "statement:sym<fn_call>"  :subid("24_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1034_tgt
@@ -900,7 +900,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__statement:sym<fn_call>"  :subid("25_1336240136.60998") :method
+.sub "!PREFIX__statement:sym<fn_call>"  :subid("25_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -911,7 +911,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "term:sym<term_fn_call>"  :subid("26_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "term:sym<term_fn_call>"  :subid("26_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1038_tgt
@@ -1008,7 +1008,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__term:sym<term_fn_call>"  :subid("27_1336240136.60998") :method
+.sub "!PREFIX__term:sym<term_fn_call>"  :subid("27_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -1019,7 +1019,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "arguments"  :subid("28_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "arguments"  :subid("28_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1042_tgt
@@ -1183,7 +1183,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__arguments"  :subid("29_1336240136.60998") :method
+.sub "!PREFIX__arguments"  :subid("29_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -1194,7 +1194,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "statement:sym<local>"  :subid("30_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "statement:sym<local>"  :subid("30_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1051_tgt
@@ -1337,7 +1337,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__statement:sym<local>"  :subid("31_1336240136.60998") :method
+.sub "!PREFIX__statement:sym<local>"  :subid("31_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -1348,7 +1348,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "statement:sym<assignment>"  :subid("32_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "statement:sym<assignment>"  :subid("32_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1057_tgt
@@ -1457,7 +1457,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__statement:sym<assignment>"  :subid("33_1336240136.60998") :method
+.sub "!PREFIX__statement:sym<assignment>"  :subid("33_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -1468,7 +1468,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "statement:sym<return>"  :subid("34_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "statement:sym<return>"  :subid("34_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1061_tgt
@@ -1579,7 +1579,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__statement:sym<return>"  :subid("35_1336240136.60998") :method
+.sub "!PREFIX__statement:sym<return>"  :subid("35_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -1590,7 +1590,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "statement:sym<if>"  :subid("36_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "statement:sym<if>"  :subid("36_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1066_tgt
@@ -1776,7 +1776,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__statement:sym<if>"  :subid("37_1336240136.60998") :method
+.sub "!PREFIX__statement:sym<if>"  :subid("37_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -1787,7 +1787,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "statement:sym<while>"  :subid("38_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "statement:sym<while>"  :subid("38_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1072_tgt
@@ -1935,7 +1935,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__statement:sym<while>"  :subid("39_1336240136.60998") :method
+.sub "!PREFIX__statement:sym<while>"  :subid("39_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -1946,7 +1946,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "statement:sym<try>"  :subid("40_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "statement:sym<try>"  :subid("40_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1077_tgt
@@ -2109,7 +2109,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__statement:sym<try>"  :subid("41_1336240136.60998") :method
+.sub "!PREFIX__statement:sym<try>"  :subid("41_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -2120,7 +2120,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "exception"  :subid("42_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "exception"  :subid("42_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1082_tgt
@@ -2205,7 +2205,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__exception"  :subid("43_1336240136.60998") :method
+.sub "!PREFIX__exception"  :subid("43_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -2216,7 +2216,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "statement:sym<do>"  :subid("44_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "statement:sym<do>"  :subid("44_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1086_tgt
@@ -2339,7 +2339,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__statement:sym<do>"  :subid("45_1336240136.60998") :method
+.sub "!PREFIX__statement:sym<do>"  :subid("45_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -2350,7 +2350,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "begin_block"  :subid("46_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "begin_block"  :subid("46_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1091_tgt
@@ -2416,7 +2416,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__begin_block"  :subid("47_1336240136.60998") :method
+.sub "!PREFIX__begin_block"  :subid("47_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     new $P100, "ResizablePMCArray"
@@ -2426,7 +2426,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "block"  :subid("48_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "block"  :subid("48_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1095_tgt
@@ -2539,7 +2539,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__block"  :subid("49_1336240136.60998") :method
+.sub "!PREFIX__block"  :subid("49_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -2550,7 +2550,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "fn_definition"  :subid("50_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "fn_definition"  :subid("50_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1101_tgt
@@ -2702,7 +2702,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__fn_definition"  :subid("51_1336240136.60998") :method
+.sub "!PREFIX__fn_definition"  :subid("51_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -2713,7 +2713,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "parameters"  :subid("52_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "parameters"  :subid("52_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1107_tgt
@@ -2752,13 +2752,13 @@
     set_addr $I10, rxscan1109_loop
     rx1107_cur."!mark_push"(0, rx1107_pos, $I10)
   rxscan1109_done:
-.annotate 'line', 139
+.annotate 'line', 143
   # rx subrule "ws" subtype=method negate=
     rx1107_cur."!cursor_pos"(rx1107_pos)
     $P10 = rx1107_cur."ws"()
     unless $P10, rx1107_fail
     rx1107_pos = $P10."pos"()
-.annotate 'line', 140
+.annotate 'line', 144
   # rx literal  "("
     add $I11, rx1107_pos, 1
     gt $I11, rx1107_eos, rx1107_fail
@@ -2849,7 +2849,7 @@
     $P10 = rx1107_cur."ws"()
     unless $P10, rx1107_fail
     rx1107_pos = $P10."pos"()
-.annotate 'line', 139
+.annotate 'line', 143
   # rx pass
     rx1107_cur."!cursor_pass"(rx1107_pos, "parameters")
     if_null rx1107_debug, debug_213
@@ -2877,7 +2877,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__parameters"  :subid("53_1336240136.60998") :method
+.sub "!PREFIX__parameters"  :subid("53_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -2888,7 +2888,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "statement:sym<throw>"  :subid("54_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "statement:sym<throw>"  :subid("54_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1116_tgt
@@ -2926,13 +2926,13 @@
     set_addr $I10, rxscan1118_loop
     rx1116_cur."!mark_push"(0, rx1116_pos, $I10)
   rxscan1118_done:
-.annotate 'line', 143
+.annotate 'line', 147
   # rx subrule "ws" subtype=method negate=
     rx1116_cur."!cursor_pos"(rx1116_pos)
     $P10 = rx1116_cur."ws"()
     unless $P10, rx1116_fail
     rx1116_pos = $P10."pos"()
-.annotate 'line', 144
+.annotate 'line', 148
   # rx subcapture "sym"
     set_addr $I10, rxcap_1119_fail
     rx1116_cur."!mark_push"(0, rx1116_pos, $I10)
@@ -2971,7 +2971,7 @@
     $P10 = rx1116_cur."ws"()
     unless $P10, rx1116_fail
     rx1116_pos = $P10."pos"()
-.annotate 'line', 143
+.annotate 'line', 147
   # rx pass
     rx1116_cur."!cursor_pass"(rx1116_pos, "statement:sym<throw>")
     if_null rx1116_debug, debug_217
@@ -2999,7 +2999,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__statement:sym<throw>"  :subid("55_1336240136.60998") :method
+.sub "!PREFIX__statement:sym<throw>"  :subid("55_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -3010,7 +3010,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "primary"  :subid("56_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "primary"  :subid("56_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1121_tgt
@@ -3049,13 +3049,13 @@
     set_addr $I10, rxscan1123_loop
     rx1121_cur."!mark_push"(0, rx1121_pos, $I10)
   rxscan1123_done:
-.annotate 'line', 148
+.annotate 'line', 152
   # rx subrule "ws" subtype=method negate=
     rx1121_cur."!cursor_pos"(rx1121_pos)
     $P10 = rx1121_cur."ws"()
     unless $P10, rx1121_fail
     rx1121_pos = $P10."pos"()
-.annotate 'line', 149
+.annotate 'line', 153
   # rx subrule "identifier" subtype=capture negate=
     rx1121_cur."!cursor_pos"(rx1121_pos)
     $P10 = rx1121_cur."identifier"()
@@ -3096,7 +3096,7 @@
     $P10 = rx1121_cur."ws"()
     unless $P10, rx1121_fail
     rx1121_pos = $P10."pos"()
-.annotate 'line', 148
+.annotate 'line', 152
   # rx pass
     rx1121_cur."!cursor_pass"(rx1121_pos, "primary")
     if_null rx1121_debug, debug_221
@@ -3124,7 +3124,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__primary"  :subid("57_1336240136.60998") :method
+.sub "!PREFIX__primary"  :subid("57_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -3135,25 +3135,25 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "postfix_expression"  :subid("58_1336240136.60998") :method
+.sub "postfix_expression"  :subid("58_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
-.annotate 'line', 152
+.annotate 'line', 156
     $P100 = self."!protoregex"("postfix_expression")
     .return ($P100)
 .end
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__postfix_expression"  :subid("59_1336240136.60998") :method
+.sub "!PREFIX__postfix_expression"  :subid("59_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
-.annotate 'line', 152
+.annotate 'line', 156
     $P101 = self."!PREFIX__!protoregex"("postfix_expression")
     .return ($P101)
 .end
 
 
 .namespace ["blu";"Grammar"]
-.sub "postfix_expression:sym<index>"  :subid("60_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "postfix_expression:sym<index>"  :subid("60_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1129_tgt
@@ -3191,7 +3191,7 @@
     set_addr $I10, rxscan1131_loop
     rx1129_cur."!mark_push"(0, rx1129_pos, $I10)
   rxscan1131_done:
-.annotate 'line', 154
+.annotate 'line', 158
   # rx subrule "ws" subtype=method negate=
     rx1129_cur."!cursor_pos"(rx1129_pos)
     $P10 = rx1129_cur."ws"()
@@ -3260,7 +3260,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__postfix_expression:sym<index>"  :subid("61_1336240136.60998") :method
+.sub "!PREFIX__postfix_expression:sym<index>"  :subid("61_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -3271,7 +3271,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "postfix_expression:sym<key>"  :subid("62_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "postfix_expression:sym<key>"  :subid("62_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1133_tgt
@@ -3309,7 +3309,7 @@
     set_addr $I10, rxscan1135_loop
     rx1133_cur."!mark_push"(0, rx1133_pos, $I10)
   rxscan1135_done:
-.annotate 'line', 155
+.annotate 'line', 159
   # rx subrule "ws" subtype=method negate=
     rx1133_cur."!cursor_pos"(rx1133_pos)
     $P10 = rx1133_cur."ws"()
@@ -3378,7 +3378,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__postfix_expression:sym<key>"  :subid("63_1336240136.60998") :method
+.sub "!PREFIX__postfix_expression:sym<key>"  :subid("63_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -3389,7 +3389,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "postfix_expression:sym<member>"  :subid("64_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "postfix_expression:sym<member>"  :subid("64_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1137_tgt
@@ -3427,13 +3427,13 @@
     set_addr $I10, rxscan1139_loop
     rx1137_cur."!mark_push"(0, rx1137_pos, $I10)
   rxscan1139_done:
-.annotate 'line', 157
+.annotate 'line', 161
   # rx subrule "ws" subtype=method negate=
     rx1137_cur."!cursor_pos"(rx1137_pos)
     $P10 = rx1137_cur."ws"()
     unless $P10, rx1137_fail
     rx1137_pos = $P10."pos"()
-.annotate 'line', 158
+.annotate 'line', 162
   # rx literal  "."
     add $I11, rx1137_pos, 1
     gt $I11, rx1137_eos, rx1137_fail
@@ -3458,7 +3458,7 @@
     $P10 = rx1137_cur."ws"()
     unless $P10, rx1137_fail
     rx1137_pos = $P10."pos"()
-.annotate 'line', 157
+.annotate 'line', 161
   # rx pass
     rx1137_cur."!cursor_pass"(rx1137_pos, "postfix_expression:sym<member>")
     if_null rx1137_debug, debug_233
@@ -3486,7 +3486,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__postfix_expression:sym<member>"  :subid("65_1336240136.60998") :method
+.sub "!PREFIX__postfix_expression:sym<member>"  :subid("65_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -3497,7 +3497,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "identifier"  :subid("66_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "identifier"  :subid("66_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1141_tgt
@@ -3535,7 +3535,7 @@
     set_addr $I10, rxscan1143_loop
     rx1141_cur."!mark_push"(0, rx1141_pos, $I10)
   rxscan1143_done:
-.annotate 'line', 162
+.annotate 'line', 166
   # rx subrule "keyword" subtype=zerowidth negate=1
     rx1141_cur."!cursor_pos"(rx1141_pos)
     $P10 = rx1141_cur."keyword"()
@@ -3547,7 +3547,7 @@
     rx1141_cur."!mark_push"(0, -1, 0, $P10)
     $P10."!cursor_names"("ident")
     rx1141_pos = $P10."pos"()
-.annotate 'line', 161
+.annotate 'line', 165
   # rx pass
     rx1141_cur."!cursor_pass"(rx1141_pos, "identifier")
     if_null rx1141_debug, debug_237
@@ -3575,7 +3575,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__identifier"  :subid("67_1336240136.60998") :method
+.sub "!PREFIX__identifier"  :subid("67_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     new $P100, "ResizablePMCArray"
@@ -3585,7 +3585,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "keyword"  :subid("68_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "keyword"  :subid("68_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1145_tgt
@@ -3624,7 +3624,7 @@
     rx1145_cur."!mark_push"(0, rx1145_pos, $I10)
   rxscan1147_done:
   alt1148_0:
-.annotate 'line', 166
+.annotate 'line', 170
     set_addr $I10, alt1148_1
     rx1145_cur."!mark_push"(0, rx1145_pos, $I10)
   # rx literal  "and"
@@ -3704,7 +3704,7 @@
   alt1148_7:
     set_addr $I10, alt1148_8
     rx1145_cur."!mark_push"(0, rx1145_pos, $I10)
-.annotate 'line', 167
+.annotate 'line', 171
   # rx literal  "not"
     add $I11, rx1145_pos, 3
     gt $I11, rx1145_eos, rx1145_fail
@@ -3796,7 +3796,7 @@
     dec $I10
     is_cclass $I11, 8192, rx1145_tgt, $I10
     unless $I11, rx1145_fail
-.annotate 'line', 165
+.annotate 'line', 169
   # rx pass
     rx1145_cur."!cursor_pass"(rx1145_pos, "keyword")
     if_null rx1145_debug, debug_241
@@ -3824,7 +3824,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__keyword"  :subid("69_1336240136.60998") :method
+.sub "!PREFIX__keyword"  :subid("69_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     new $P100, "ResizablePMCArray"
@@ -3848,7 +3848,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "term:sym<primary>"  :subid("70_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "term:sym<primary>"  :subid("70_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1150_tgt
@@ -3886,7 +3886,7 @@
     set_addr $I10, rxscan1152_loop
     rx1150_cur."!mark_push"(0, rx1150_pos, $I10)
   rxscan1152_done:
-.annotate 'line', 171
+.annotate 'line', 175
   # rx subrule "primary" subtype=capture negate=
     rx1150_cur."!cursor_pos"(rx1150_pos)
     $P10 = rx1150_cur."primary"()
@@ -3894,7 +3894,7 @@
     rx1150_cur."!mark_push"(0, -1, 0, $P10)
     $P10."!cursor_names"("primary")
     rx1150_pos = $P10."pos"()
-.annotate 'line', 170
+.annotate 'line', 174
   # rx pass
     rx1150_cur."!cursor_pass"(rx1150_pos, "term:sym<primary>")
     if_null rx1150_debug, debug_245
@@ -3922,7 +3922,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__term:sym<primary>"  :subid("71_1336240136.60998") :method
+.sub "!PREFIX__term:sym<primary>"  :subid("71_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("primary", "")
@@ -3933,7 +3933,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "statement:sym<say>"  :subid("72_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "statement:sym<say>"  :subid("72_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1154_tgt
@@ -3972,13 +3972,13 @@
     set_addr $I10, rxscan1156_loop
     rx1154_cur."!mark_push"(0, rx1154_pos, $I10)
   rxscan1156_done:
-.annotate 'line', 175
+.annotate 'line', 179
   # rx subrule "ws" subtype=method negate=
     rx1154_cur."!cursor_pos"(rx1154_pos)
     $P10 = rx1154_cur."ws"()
     unless $P10, rx1154_fail
     rx1154_pos = $P10."pos"()
-.annotate 'line', 176
+.annotate 'line', 180
   # rx subcapture "sym"
     set_addr $I10, rxcap_1157_fail
     rx1154_cur."!mark_push"(0, rx1154_pos, $I10)
@@ -4068,7 +4068,7 @@
     $P10 = rx1154_cur."ws"()
     unless $P10, rx1154_fail
     rx1154_pos = $P10."pos"()
-.annotate 'line', 175
+.annotate 'line', 179
   # rx pass
     rx1154_cur."!cursor_pass"(rx1154_pos, "statement:sym<say>")
     if_null rx1154_debug, debug_249
@@ -4096,7 +4096,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__statement:sym<say>"  :subid("73_1336240136.60998") :method
+.sub "!PREFIX__statement:sym<say>"  :subid("73_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -4107,7 +4107,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "statement:sym<print>"  :subid("74_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "statement:sym<print>"  :subid("74_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1162_tgt
@@ -4146,13 +4146,13 @@
     set_addr $I10, rxscan1164_loop
     rx1162_cur."!mark_push"(0, rx1162_pos, $I10)
   rxscan1164_done:
-.annotate 'line', 178
+.annotate 'line', 182
   # rx subrule "ws" subtype=method negate=
     rx1162_cur."!cursor_pos"(rx1162_pos)
     $P10 = rx1162_cur."ws"()
     unless $P10, rx1162_fail
     rx1162_pos = $P10."pos"()
-.annotate 'line', 179
+.annotate 'line', 183
   # rx subcapture "sym"
     set_addr $I10, rxcap_1165_fail
     rx1162_cur."!mark_push"(0, rx1162_pos, $I10)
@@ -4242,7 +4242,7 @@
     $P10 = rx1162_cur."ws"()
     unless $P10, rx1162_fail
     rx1162_pos = $P10."pos"()
-.annotate 'line', 178
+.annotate 'line', 182
   # rx pass
     rx1162_cur."!cursor_pass"(rx1162_pos, "statement:sym<print>")
     if_null rx1162_debug, debug_253
@@ -4270,7 +4270,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__statement:sym<print>"  :subid("75_1336240136.60998") :method
+.sub "!PREFIX__statement:sym<print>"  :subid("75_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -4281,7 +4281,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "statement:sym<write>"  :subid("76_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "statement:sym<write>"  :subid("76_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1170_tgt
@@ -4320,13 +4320,13 @@
     set_addr $I10, rxscan1172_loop
     rx1170_cur."!mark_push"(0, rx1170_pos, $I10)
   rxscan1172_done:
-.annotate 'line', 181
+.annotate 'line', 185
   # rx subrule "ws" subtype=method negate=
     rx1170_cur."!cursor_pos"(rx1170_pos)
     $P10 = rx1170_cur."ws"()
     unless $P10, rx1170_fail
     rx1170_pos = $P10."pos"()
-.annotate 'line', 182
+.annotate 'line', 186
   # rx subcapture "sym"
     set_addr $I10, rxcap_1173_fail
     rx1170_cur."!mark_push"(0, rx1170_pos, $I10)
@@ -4416,7 +4416,7 @@
     $P10 = rx1170_cur."ws"()
     unless $P10, rx1170_fail
     rx1170_pos = $P10."pos"()
-.annotate 'line', 181
+.annotate 'line', 185
   # rx pass
     rx1170_cur."!cursor_pass"(rx1170_pos, "statement:sym<write>")
     if_null rx1170_debug, debug_257
@@ -4444,7 +4444,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__statement:sym<write>"  :subid("77_1336240136.60998") :method
+.sub "!PREFIX__statement:sym<write>"  :subid("77_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -4455,7 +4455,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "term:sym<integer_constant>"  :subid("78_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "term:sym<integer_constant>"  :subid("78_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1178_tgt
@@ -4493,7 +4493,7 @@
     set_addr $I10, rxscan1180_loop
     rx1178_cur."!mark_push"(0, rx1178_pos, $I10)
   rxscan1180_done:
-.annotate 'line', 189
+.annotate 'line', 193
   # rx subrule "integer" subtype=capture negate=
     rx1178_cur."!cursor_pos"(rx1178_pos)
     $P10 = rx1178_cur."integer"()
@@ -4528,7 +4528,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__term:sym<integer_constant>"  :subid("79_1336240136.60998") :method
+.sub "!PREFIX__term:sym<integer_constant>"  :subid("79_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("integer", "")
@@ -4539,7 +4539,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "term:sym<floating_point_constant>"  :subid("80_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "term:sym<floating_point_constant>"  :subid("80_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1182_tgt
@@ -4578,10 +4578,10 @@
     rx1182_cur."!mark_push"(0, rx1182_pos, $I10)
   rxscan1184_done:
   alt1185_0:
-.annotate 'line', 193
+.annotate 'line', 197
     set_addr $I10, alt1185_1
     rx1182_cur."!mark_push"(0, rx1182_pos, $I10)
-.annotate 'line', 194
+.annotate 'line', 198
   # rx charclass_q d r 1..-1
     sub $I10, rx1182_pos, rx1182_off
     find_not_cclass $I11, 8, rx1182_tgt, $I10, rx1182_eos
@@ -4601,7 +4601,7 @@
     add rx1182_pos, rx1182_off, $I11
     goto alt1185_end
   alt1185_1:
-.annotate 'line', 195
+.annotate 'line', 199
   # rx charclass_q d r 0..-1
     sub $I10, rx1182_pos, rx1182_off
     find_not_cclass $I11, 8, rx1182_tgt, $I10, rx1182_eos
@@ -4620,7 +4620,7 @@
     lt $I11, $I12, rx1182_fail
     add rx1182_pos, rx1182_off, $I11
   alt1185_end:
-.annotate 'line', 192
+.annotate 'line', 196
   # rx pass
     rx1182_cur."!cursor_pass"(rx1182_pos, "term:sym<floating_point_constant>")
     if_null rx1182_debug, debug_265
@@ -4648,7 +4648,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__term:sym<floating_point_constant>"  :subid("81_1336240136.60998") :method
+.sub "!PREFIX__term:sym<floating_point_constant>"  :subid("81_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     new $P100, "ResizablePMCArray"
@@ -4659,7 +4659,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "circumfix:sym<[ ]>"  :subid("82_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "circumfix:sym<[ ]>"  :subid("82_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1187_tgt
@@ -4698,13 +4698,13 @@
     set_addr $I10, rxscan1189_loop
     rx1187_cur."!mark_push"(0, rx1187_pos, $I10)
   rxscan1189_done:
-.annotate 'line', 200
+.annotate 'line', 204
   # rx subrule "ws" subtype=method negate=
     rx1187_cur."!cursor_pos"(rx1187_pos)
     $P10 = rx1187_cur."ws"()
     unless $P10, rx1187_fail
     rx1187_pos = $P10."pos"()
-.annotate 'line', 201
+.annotate 'line', 205
   # rx literal  "["
     add $I11, rx1187_pos, 1
     gt $I11, rx1187_eos, rx1187_fail
@@ -4795,7 +4795,7 @@
     $P10 = rx1187_cur."ws"()
     unless $P10, rx1187_fail
     rx1187_pos = $P10."pos"()
-.annotate 'line', 200
+.annotate 'line', 204
   # rx pass
     rx1187_cur."!cursor_pass"(rx1187_pos, "circumfix:sym<[ ]>")
     if_null rx1187_debug, debug_269
@@ -4823,7 +4823,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__circumfix:sym<[ ]>"  :subid("83_1336240136.60998") :method
+.sub "!PREFIX__circumfix:sym<[ ]>"  :subid("83_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -4834,7 +4834,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "circumfix:sym<{ }>"  :subid("84_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "circumfix:sym<{ }>"  :subid("84_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1196_tgt
@@ -4873,13 +4873,13 @@
     set_addr $I10, rxscan1198_loop
     rx1196_cur."!mark_push"(0, rx1196_pos, $I10)
   rxscan1198_done:
-.annotate 'line', 204
+.annotate 'line', 208
   # rx subrule "ws" subtype=method negate=
     rx1196_cur."!cursor_pos"(rx1196_pos)
     $P10 = rx1196_cur."ws"()
     unless $P10, rx1196_fail
     rx1196_pos = $P10."pos"()
-.annotate 'line', 205
+.annotate 'line', 209
   # rx literal  "{"
     add $I11, rx1196_pos, 1
     gt $I11, rx1196_eos, rx1196_fail
@@ -4970,7 +4970,7 @@
     $P10 = rx1196_cur."ws"()
     unless $P10, rx1196_fail
     rx1196_pos = $P10."pos"()
-.annotate 'line', 204
+.annotate 'line', 208
   # rx pass
     rx1196_cur."!cursor_pass"(rx1196_pos, "circumfix:sym<{ }>")
     if_null rx1196_debug, debug_273
@@ -4998,7 +4998,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__circumfix:sym<{ }>"  :subid("85_1336240136.60998") :method
+.sub "!PREFIX__circumfix:sym<{ }>"  :subid("85_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -5009,7 +5009,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "named_field"  :subid("86_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "named_field"  :subid("86_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1205_tgt
@@ -5047,13 +5047,13 @@
     set_addr $I10, rxscan1207_loop
     rx1205_cur."!mark_push"(0, rx1205_pos, $I10)
   rxscan1207_done:
-.annotate 'line', 208
+.annotate 'line', 212
   # rx subrule "ws" subtype=method negate=
     rx1205_cur."!cursor_pos"(rx1205_pos)
     $P10 = rx1205_cur."ws"()
     unless $P10, rx1205_fail
     rx1205_pos = $P10."pos"()
-.annotate 'line', 209
+.annotate 'line', 213
   # rx subrule "string_constant" subtype=capture negate=
     rx1205_cur."!cursor_pos"(rx1205_pos)
     $P10 = rx1205_cur."string_constant"()
@@ -5090,7 +5090,7 @@
     $P10 = rx1205_cur."ws"()
     unless $P10, rx1205_fail
     rx1205_pos = $P10."pos"()
-.annotate 'line', 208
+.annotate 'line', 212
   # rx pass
     rx1205_cur."!cursor_pass"(rx1205_pos, "named_field")
     if_null rx1205_debug, debug_277
@@ -5118,7 +5118,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__named_field"  :subid("87_1336240136.60998") :method
+.sub "!PREFIX__named_field"  :subid("87_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "")
@@ -5129,7 +5129,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "term:sym<string_constant>"  :subid("88_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "term:sym<string_constant>"  :subid("88_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1209_tgt
@@ -5167,7 +5167,7 @@
     set_addr $I10, rxscan1211_loop
     rx1209_cur."!mark_push"(0, rx1209_pos, $I10)
   rxscan1211_done:
-.annotate 'line', 214
+.annotate 'line', 218
   # rx subrule "string_constant" subtype=capture negate=
     rx1209_cur."!cursor_pos"(rx1209_pos)
     $P10 = rx1209_cur."string_constant"()
@@ -5202,7 +5202,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__term:sym<string_constant>"  :subid("89_1336240136.60998") :method
+.sub "!PREFIX__term:sym<string_constant>"  :subid("89_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("string_constant", "")
@@ -5213,7 +5213,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "string_constant"  :subid("90_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "string_constant"  :subid("90_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1213_tgt
@@ -5251,7 +5251,7 @@
     set_addr $I10, rxscan1215_loop
     rx1213_cur."!mark_push"(0, rx1213_pos, $I10)
   rxscan1215_done:
-.annotate 'line', 215
+.annotate 'line', 219
   # rx subrule "quote" subtype=capture negate=
     rx1213_cur."!cursor_pos"(rx1213_pos)
     $P10 = rx1213_cur."quote"()
@@ -5286,7 +5286,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__string_constant"  :subid("91_1336240136.60998") :method
+.sub "!PREFIX__string_constant"  :subid("91_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("quote", "")
@@ -5297,25 +5297,25 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "quote"  :subid("92_1336240136.60998") :method
+.sub "quote"  :subid("92_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
-.annotate 'line', 217
+.annotate 'line', 221
     $P100 = self."!protoregex"("quote")
     .return ($P100)
 .end
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__quote"  :subid("93_1336240136.60998") :method
+.sub "!PREFIX__quote"  :subid("93_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
-.annotate 'line', 217
+.annotate 'line', 221
     $P101 = self."!PREFIX__!protoregex"("quote")
     .return ($P101)
 .end
 
 
 .namespace ["blu";"Grammar"]
-.sub "quote:sym<'>"  :subid("94_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "quote:sym<'>"  :subid("94_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1219_tgt
@@ -5353,7 +5353,7 @@
     set_addr $I10, rxscan1221_loop
     rx1219_cur."!mark_push"(0, rx1219_pos, $I10)
   rxscan1221_done:
-.annotate 'line', 218
+.annotate 'line', 222
   # rx enumcharlist negate=0 zerowidth
     sub $I10, rx1219_pos, rx1219_off
     substr $S10, rx1219_tgt, $I10, 1
@@ -5393,7 +5393,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__quote:sym<'>"  :subid("95_1336240136.60998") :method
+.sub "!PREFIX__quote:sym<'>"  :subid("95_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     new $P100, "ResizablePMCArray"
@@ -5403,7 +5403,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "quote:sym<\">"  :subid("96_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "quote:sym<\">"  :subid("96_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1223_tgt
@@ -5441,7 +5441,7 @@
     set_addr $I10, rxscan1225_loop
     rx1223_cur."!mark_push"(0, rx1223_pos, $I10)
   rxscan1225_done:
-.annotate 'line', 219
+.annotate 'line', 223
   # rx enumcharlist negate=0 zerowidth
     sub $I10, rx1223_pos, rx1223_off
     substr $S10, rx1223_tgt, $I10, 1
@@ -5481,7 +5481,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__quote:sym<\">"  :subid("97_1336240136.60998") :method
+.sub "!PREFIX__quote:sym<\">"  :subid("97_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     new $P100, "ResizablePMCArray"
@@ -5491,7 +5491,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "circumfix:sym<( )>"  :subid("98_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "circumfix:sym<( )>"  :subid("98_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1227_tgt
@@ -5529,7 +5529,7 @@
     set_addr $I10, rxscan1229_loop
     rx1227_cur."!mark_push"(0, rx1227_pos, $I10)
   rxscan1229_done:
-.annotate 'line', 234
+.annotate 'line', 238
   # rx literal  "("
     add $I11, rx1227_pos, 1
     gt $I11, rx1227_eos, rx1227_fail
@@ -5583,7 +5583,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__circumfix:sym<( )>"  :subid("99_1336240136.60998") :method
+.sub "!PREFIX__circumfix:sym<( )>"  :subid("99_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("ws", "(")
@@ -5594,7 +5594,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "prefix:sym<->"  :subid("100_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "prefix:sym<->"  :subid("100_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1231_tgt
@@ -5632,7 +5632,7 @@
     set_addr $I10, rxscan1233_loop
     rx1231_cur."!mark_push"(0, rx1231_pos, $I10)
   rxscan1233_done:
-.annotate 'line', 236
+.annotate 'line', 240
   # rx subcapture "sym"
     set_addr $I10, rxcap_1234_fail
     rx1231_cur."!mark_push"(0, rx1231_pos, $I10)
@@ -5688,7 +5688,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__prefix:sym<->"  :subid("101_1336240136.60998") :method
+.sub "!PREFIX__prefix:sym<->"  :subid("101_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("O", "-")
@@ -5699,7 +5699,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "prefix:sym<not>"  :subid("102_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "prefix:sym<not>"  :subid("102_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1236_tgt
@@ -5737,7 +5737,7 @@
     set_addr $I10, rxscan1238_loop
     rx1236_cur."!mark_push"(0, rx1236_pos, $I10)
   rxscan1238_done:
-.annotate 'line', 237
+.annotate 'line', 241
   # rx subcapture "sym"
     set_addr $I10, rxcap_1239_fail
     rx1236_cur."!mark_push"(0, rx1236_pos, $I10)
@@ -5793,7 +5793,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__prefix:sym<not>"  :subid("103_1336240136.60998") :method
+.sub "!PREFIX__prefix:sym<not>"  :subid("103_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("O", "not")
@@ -5804,7 +5804,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "infix:sym<*>"  :subid("104_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "infix:sym<*>"  :subid("104_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1241_tgt
@@ -5842,7 +5842,7 @@
     set_addr $I10, rxscan1243_loop
     rx1241_cur."!mark_push"(0, rx1241_pos, $I10)
   rxscan1243_done:
-.annotate 'line', 239
+.annotate 'line', 243
   # rx subcapture "sym"
     set_addr $I10, rxcap_1244_fail
     rx1241_cur."!mark_push"(0, rx1241_pos, $I10)
@@ -5898,7 +5898,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__infix:sym<*>"  :subid("105_1336240136.60998") :method
+.sub "!PREFIX__infix:sym<*>"  :subid("105_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("O", "*")
@@ -5909,7 +5909,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "infix:sym<%>"  :subid("106_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "infix:sym<%>"  :subid("106_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1246_tgt
@@ -5947,7 +5947,7 @@
     set_addr $I10, rxscan1248_loop
     rx1246_cur."!mark_push"(0, rx1246_pos, $I10)
   rxscan1248_done:
-.annotate 'line', 240
+.annotate 'line', 244
   # rx subcapture "sym"
     set_addr $I10, rxcap_1249_fail
     rx1246_cur."!mark_push"(0, rx1246_pos, $I10)
@@ -6003,7 +6003,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__infix:sym<%>"  :subid("107_1336240136.60998") :method
+.sub "!PREFIX__infix:sym<%>"  :subid("107_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("O", "%")
@@ -6014,7 +6014,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "infix:sym</>"  :subid("108_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "infix:sym</>"  :subid("108_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1251_tgt
@@ -6052,7 +6052,7 @@
     set_addr $I10, rxscan1253_loop
     rx1251_cur."!mark_push"(0, rx1251_pos, $I10)
   rxscan1253_done:
-.annotate 'line', 241
+.annotate 'line', 245
   # rx subcapture "sym"
     set_addr $I10, rxcap_1254_fail
     rx1251_cur."!mark_push"(0, rx1251_pos, $I10)
@@ -6108,7 +6108,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__infix:sym</>"  :subid("109_1336240136.60998") :method
+.sub "!PREFIX__infix:sym</>"  :subid("109_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("O", "/")
@@ -6119,7 +6119,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "infix:sym<+>"  :subid("110_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "infix:sym<+>"  :subid("110_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1256_tgt
@@ -6157,7 +6157,7 @@
     set_addr $I10, rxscan1258_loop
     rx1256_cur."!mark_push"(0, rx1256_pos, $I10)
   rxscan1258_done:
-.annotate 'line', 243
+.annotate 'line', 247
   # rx subcapture "sym"
     set_addr $I10, rxcap_1259_fail
     rx1256_cur."!mark_push"(0, rx1256_pos, $I10)
@@ -6213,7 +6213,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__infix:sym<+>"  :subid("111_1336240136.60998") :method
+.sub "!PREFIX__infix:sym<+>"  :subid("111_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("O", "+")
@@ -6224,7 +6224,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "infix:sym<->"  :subid("112_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "infix:sym<->"  :subid("112_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1261_tgt
@@ -6262,7 +6262,7 @@
     set_addr $I10, rxscan1263_loop
     rx1261_cur."!mark_push"(0, rx1261_pos, $I10)
   rxscan1263_done:
-.annotate 'line', 244
+.annotate 'line', 248
   # rx subcapture "sym"
     set_addr $I10, rxcap_1264_fail
     rx1261_cur."!mark_push"(0, rx1261_pos, $I10)
@@ -6318,7 +6318,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__infix:sym<->"  :subid("113_1336240136.60998") :method
+.sub "!PREFIX__infix:sym<->"  :subid("113_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("O", "-")
@@ -6329,7 +6329,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "infix:sym<..>"  :subid("114_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "infix:sym<..>"  :subid("114_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1266_tgt
@@ -6367,7 +6367,7 @@
     set_addr $I10, rxscan1268_loop
     rx1266_cur."!mark_push"(0, rx1266_pos, $I10)
   rxscan1268_done:
-.annotate 'line', 245
+.annotate 'line', 249
   # rx subcapture "sym"
     set_addr $I10, rxcap_1269_fail
     rx1266_cur."!mark_push"(0, rx1266_pos, $I10)
@@ -6423,7 +6423,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__infix:sym<..>"  :subid("115_1336240136.60998") :method
+.sub "!PREFIX__infix:sym<..>"  :subid("115_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("O", "..")
@@ -6434,7 +6434,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "infix:sym<<>"  :subid("116_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "infix:sym<<>"  :subid("116_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1271_tgt
@@ -6472,7 +6472,7 @@
     set_addr $I10, rxscan1273_loop
     rx1271_cur."!mark_push"(0, rx1271_pos, $I10)
   rxscan1273_done:
-.annotate 'line', 248
+.annotate 'line', 252
   # rx subcapture "sym"
     set_addr $I10, rxcap_1274_fail
     rx1271_cur."!mark_push"(0, rx1271_pos, $I10)
@@ -6528,7 +6528,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__infix:sym<<>"  :subid("117_1336240136.60998") :method
+.sub "!PREFIX__infix:sym<<>"  :subid("117_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("O", "<")
@@ -6539,7 +6539,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "infix:sym<<=>"  :subid("118_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "infix:sym<<=>"  :subid("118_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1276_tgt
@@ -6577,7 +6577,7 @@
     set_addr $I10, rxscan1278_loop
     rx1276_cur."!mark_push"(0, rx1276_pos, $I10)
   rxscan1278_done:
-.annotate 'line', 249
+.annotate 'line', 253
   # rx subcapture "sym"
     set_addr $I10, rxcap_1279_fail
     rx1276_cur."!mark_push"(0, rx1276_pos, $I10)
@@ -6633,7 +6633,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__infix:sym<<=>"  :subid("119_1336240136.60998") :method
+.sub "!PREFIX__infix:sym<<=>"  :subid("119_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("O", "<=")
@@ -6644,7 +6644,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "infix:sym<>>"  :subid("120_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "infix:sym<>>"  :subid("120_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1281_tgt
@@ -6682,7 +6682,7 @@
     set_addr $I10, rxscan1283_loop
     rx1281_cur."!mark_push"(0, rx1281_pos, $I10)
   rxscan1283_done:
-.annotate 'line', 250
+.annotate 'line', 254
   # rx subcapture "sym"
     set_addr $I10, rxcap_1284_fail
     rx1281_cur."!mark_push"(0, rx1281_pos, $I10)
@@ -6738,7 +6738,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__infix:sym<>>"  :subid("121_1336240136.60998") :method
+.sub "!PREFIX__infix:sym<>>"  :subid("121_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("O", ">")
@@ -6749,7 +6749,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "infix:sym<>=>"  :subid("122_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "infix:sym<>=>"  :subid("122_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1286_tgt
@@ -6787,7 +6787,7 @@
     set_addr $I10, rxscan1288_loop
     rx1286_cur."!mark_push"(0, rx1286_pos, $I10)
   rxscan1288_done:
-.annotate 'line', 251
+.annotate 'line', 255
   # rx subcapture "sym"
     set_addr $I10, rxcap_1289_fail
     rx1286_cur."!mark_push"(0, rx1286_pos, $I10)
@@ -6843,7 +6843,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__infix:sym<>=>"  :subid("123_1336240136.60998") :method
+.sub "!PREFIX__infix:sym<>=>"  :subid("123_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("O", ">=")
@@ -6854,7 +6854,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "infix:sym<==>"  :subid("124_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "infix:sym<==>"  :subid("124_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1291_tgt
@@ -6892,7 +6892,7 @@
     set_addr $I10, rxscan1293_loop
     rx1291_cur."!mark_push"(0, rx1291_pos, $I10)
   rxscan1293_done:
-.annotate 'line', 252
+.annotate 'line', 256
   # rx subcapture "sym"
     set_addr $I10, rxcap_1294_fail
     rx1291_cur."!mark_push"(0, rx1291_pos, $I10)
@@ -6948,7 +6948,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__infix:sym<==>"  :subid("125_1336240136.60998") :method
+.sub "!PREFIX__infix:sym<==>"  :subid("125_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("O", "==")
@@ -6959,7 +6959,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "infix:sym<!=>"  :subid("126_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "infix:sym<!=>"  :subid("126_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1296_tgt
@@ -6997,7 +6997,7 @@
     set_addr $I10, rxscan1298_loop
     rx1296_cur."!mark_push"(0, rx1296_pos, $I10)
   rxscan1298_done:
-.annotate 'line', 253
+.annotate 'line', 257
   # rx subcapture "sym"
     set_addr $I10, rxcap_1299_fail
     rx1296_cur."!mark_push"(0, rx1296_pos, $I10)
@@ -7053,7 +7053,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__infix:sym<!=>"  :subid("127_1336240136.60998") :method
+.sub "!PREFIX__infix:sym<!=>"  :subid("127_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("O", "!=")
@@ -7064,7 +7064,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "infix:sym<and>"  :subid("128_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "infix:sym<and>"  :subid("128_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1301_tgt
@@ -7102,7 +7102,7 @@
     set_addr $I10, rxscan1303_loop
     rx1301_cur."!mark_push"(0, rx1301_pos, $I10)
   rxscan1303_done:
-.annotate 'line', 255
+.annotate 'line', 259
   # rx subcapture "sym"
     set_addr $I10, rxcap_1304_fail
     rx1301_cur."!mark_push"(0, rx1301_pos, $I10)
@@ -7158,7 +7158,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__infix:sym<and>"  :subid("129_1336240136.60998") :method
+.sub "!PREFIX__infix:sym<and>"  :subid("129_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("O", "and")
@@ -7169,7 +7169,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "infix:sym<or>"  :subid("130_1336240136.60998") :method :outer("11_1336240136.60998")
+.sub "infix:sym<or>"  :subid("130_1336790520.7162") :method :outer("11_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     .local string rx1306_tgt
@@ -7207,7 +7207,7 @@
     set_addr $I10, rxscan1308_loop
     rx1306_cur."!mark_push"(0, rx1306_pos, $I10)
   rxscan1308_done:
-.annotate 'line', 256
+.annotate 'line', 260
   # rx subcapture "sym"
     set_addr $I10, rxcap_1309_fail
     rx1306_cur."!mark_push"(0, rx1306_pos, $I10)
@@ -7263,7 +7263,7 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "!PREFIX__infix:sym<or>"  :subid("131_1336240136.60998") :method
+.sub "!PREFIX__infix:sym<or>"  :subid("131_1336790520.7162") :method
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
     $P100 = self."!PREFIX__!subrule"("O", "or")
@@ -7274,20 +7274,20 @@
 
 
 .namespace ["blu";"Grammar"]
-.sub "_block1310" :load :anon :subid("132_1336240136.60998")
+.sub "_block1310" :load :anon :subid("132_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 10
-    .const '' $P1312 = "11_1336240136.60998" 
+    .const '' $P1312 = "11_1336790520.7162" 
     $P100 = $P1312()
     .return ($P100)
 .end
 
 
 .namespace []
-.sub "_block1313" :load :anon :subid("133_1336240136.60998")
+.sub "_block1313" :load :anon :subid("133_1336790520.7162")
 .annotate 'file', "src/blu/Grammar.pm"
 .annotate 'line', 1
-    .const '' $P1315 = "10_1336240136.60998" 
+    .const '' $P1315 = "10_1336790520.7162" 
     $P100 = $P1315()
     .return ($P100)
 .end

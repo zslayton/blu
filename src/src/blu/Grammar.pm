@@ -136,6 +136,10 @@ rule fn_definition {
 	'end'
 }
 
+#rule term:sym<in_test> {
+#	<string_constant> 'in' <identifier>
+#}
+
 rule parameters {
 	'(' [<identifier> ** ',']? ')'
 }
@@ -181,7 +185,7 @@ rule statement:sym<print> {
 rule statement:sym<write> {
 	<sym> [ <EXPR> ] ** ','
 }
-
+#rule statement:sym
 ## Terms
 
 #token term:sym<integer> { <integer> }
