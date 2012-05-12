@@ -1,0 +1,19 @@
+student_directory = {
+	# Names mapped to Student IDs
+	'Jenny' : '8675309',
+	'Jean Val Jean' : '24601',
+	'Douglas Adams' : 42
+}
+
+fn student_lookup(name)
+	if has_key(student_directory, name) then
+		print name, " has Student ID #", student_directory{name}
+	else
+		print name, " does not attend this school."
+	end
+end
+
+student_lookup('Jean Val Jean')
+student_lookup('Barney Rubble')
+student_lookup('Douglas Adams')
+student_lookup('Walter Matthau')

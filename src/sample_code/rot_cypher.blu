@@ -1,0 +1,114 @@
+# ASCII / UTF8 Values
+
+print 'A: ', ord('A')
+print 'Z: ', ord('Z')
+print 'a: ', ord('a')
+print 'z: ', ord('z')
+print '0: ', ord('0')
+print '9: ', ord('9')
+
+fn make_wheel(low_ch, high_ch)
+	local wheel = []
+	local m = 0
+	local low = ord(low_ch)
+	local high = ord(high_ch)
+	while m < ((high - low) + 1) do
+		local ch = char(low + m)
+		wheel[m] = ch
+		m = m + 1
+	end
+	return wheel
+end
+
+fn wheel_low(wheel)
+	local low = ord(wheel[0])
+	return low
+end
+
+fn wheel_high(wheel)
+	local size = len(wheel)
+	local high = ord(wheel[size - 1])
+	return high
+end
+
+fn wheel_to_str(wheel)
+	return 'Wheel[' .. char(wheel_low(wheel)) .. '-' .. char(wheel_high(wheel)) .. ']'
+end
+
+AZ_wheel  = make_wheel('A', 'Z')
+az_wheel  = make_wheel('a', 'z')
+num_wheel = make_wheel('0', '9')
+
+wheel_list = [az_wheel, AZ_wheel, num_wheel]
+
+fn rot_letter(letter, offset)
+	local num_val = ord(letter)
+	local new_letter = letter
+	local new_num_val = num_val
+	local m = 0
+	while m < len(wheel_list) do
+		local wheel = wheel_list[m]
+		if 
+			num_val >= wheel_low(wheel)
+				and
+			num_val <= wheel_high(wheel)
+		then
+			local index = num_val + offset
+			if index > len(wheel) then
+				index = index - wheel_low(wheel)
+				index = index % len(wheel)
+			end
+			new_letter = wheel[index]
+			new_num_val = ord(new_letter)
+		end
+		m = m + 1
+	end
+	return new_letter
+end
+
+fn rot(string, offset)
+	local m = 0
+	print "Performing ROT-", offset, " on '", string, "'"
+	local answer = ''
+	while m < strlen(string) do
+		local ch = substr(string, m, 1)
+		write '  (', ch, ' : ', ord(ch), ') --> '
+		ch = rot_letter(ch, offset)
+		print '(', ch, ' : ', ord(ch), ')'
+		answer = answer .. ch
+		m = m + 1
+	end
+	print "Result: ", answer
+	return answer
+end
+
+fn chomp(line)
+        local last = strlen(line) - 1
+        if substr(line, last, 1) == "\n" then
+                print "~Chomped!~"
+        else
+                last = last + 1
+        end
+
+        return substr(line, 0, last)
+end
+
+print '=================='
+print '    ROT Cypher    '
+print '=================='
+
+line = 1
+while line do
+	write "String to ROTate?: "
+	line = readline()
+	line = chomp(line)
+	if line then
+		write "ROTation offset? : "
+		offset = readnum()
+		if offset != 0 then
+			rot(line, offset)
+		else
+			line = 0
+		end
+	end
+end

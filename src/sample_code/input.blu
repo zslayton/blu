@@ -1,0 +1,16 @@
+fn chomp(line)
+	local last = strlen(line) - 1
+	if substr(line, last, 1) == "\n" then
+		print "~Chomped!~"
+	else
+		last = last + 1
+	end
+
+	return substr(line, 0, last)
+end
+
+local line = readline()
+while line do
+	print "You said '", chomp(line), "'"
+	line = readline()
+end
