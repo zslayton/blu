@@ -94,6 +94,10 @@ rule statement:sym<return> {
 #	<primary> '=' <EXPR>
 #}
 
+rule term:sym<in_test> {
+	'key' <EXPR> 'in' <primary>
+}
+
 rule statement:sym<if> {
 	<sym> <EXPR> 'then' $<then>=<block>
 	['else' $<else>=<block> ]?
@@ -136,10 +140,6 @@ rule fn_definition {
 	'end'
 }
 
-#rule term:sym<in_test> {
-#	<string_constant> 'in' <identifier>
-#}
-
 rule parameters {
 	'(' [<identifier> ** ',']? ')'
 }
@@ -168,7 +168,7 @@ token identifier {
 
 token keyword {
 	['and'|'catch'|'do'   |'else' |'end' |'for' |'if'
-	|'not'|'or'|'return'|'fn' |'throw'|'try' |'local'|'while']>>
+	|'not'|'or'|'return'|'fn'|'key'|'in'|'throw'|'try' |'local'|'while']>>
 }
 
 token term:sym<primary> {

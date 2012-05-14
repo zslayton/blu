@@ -98,11 +98,11 @@ while line do
 		write "ROTation offset? : "
 		offset = readnum()
 		if offset != 0 then
-			local key = line .. offset
-			if has_key(cache, key) then
-				print "Cached answer: ", cache{key}
+			local id = line .. offset
+			if key id in cache then
+				print "Cached answer: ", cache{id}
 			else
-				cache{key} = rot(line, offset)
+				cache{id} = rot(line, offset)
 			end
 		else
 			line = 0

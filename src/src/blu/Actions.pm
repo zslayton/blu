@@ -289,14 +289,16 @@ method fn_definition($/) {
 	make $past;
 }
 
-#method term:sym<in_test> {
-#    my $past := PAST::Op.new( :name<say>, :pasttype<call>, :node($/) );
-#
-#    #for $<EXPR> { $past.push( $_.ast ); }
-#	$past.push($<identifier>.ast);
-#	$past.push($<string_constant>.ast);
-#	make $past;
-#}
+method term:sym<in_test>($/) {
+	my $past := PAST::Op.new( 
+		:name<has_key>,
+		:pasttype<call>,
+		:node($/)
+	);
+	$past.push($<primary>.ast);
+	$past.push($<EXPR>.ast);
+	make $past;
+}
 
 method statement:sym<fn_call>($/) {
 	my $invocant := $<primary>.ast;
