@@ -1,0 +1,124 @@
+fn chomp(line)
+	local last = strlen(line) - 1
+	if substr(line, last, 1) == "\n" then
+		# Chomped
+	else
+		last = last + 1
+	end
+
+	return substr(line, 0, last)
+end
+
+fn for_each(array, func)
+	local m = 0
+	while m < len(array) do
+		local item = array[m]
+		array[m] = func(item)
+		m = m + 1
+	end
+end
+
+fn count_each(array, func)
+	local m = 0
+	local count = 0
+	while m < len(array) do
+		local item = array[m]
+		if func(item) then
+			count = count + 1
+		end
+		m = m + 1
+	end
+	return count
+end
+
+fn char_to_lower(ch)
+	local num_val = ord(ch)
+	if num_val >= ord('A') and num_val <= ord('Z') then
+		return char(num_val + 32)
+	else
+		return ch
+	end
+end
+
+fn to_lower(phrase)
+	letters = split('', phrase)
+	for_each(letters, char_to_lower)
+	phrase = join('', letters)
+	print "Lower case: ", phrase
+end
+
+vowels = {
+	'a' : 1,
+	'A' : 1,
+	'e' : 1,
+	'E' : 1,
+	'i' : 1,
+	'I' : 1,
+	'o' : 1,
+	'O' : 1,
+	'u' : 1,
+	'U' : 1
+}
+
+fn char_to_upper(ch)
+	local num_val = ord(ch)
+	if num_val >= ord('a') and num_val <= ord('z') then
+		return char(num_val - 32)
+	else
+		return ch
+	end
+end
+
+fn to_upper(phrase)
+	letters = split('', phrase)
+	for_each(letters, char_to_upper)
+	phrase = join('', letters)
+	print "Upper case: ", phrase
+end
+
+fn is_vowel(ch)
+	if key ch in vowels then
+		return 1
+	else
+		return 0
+	end
+end
+
+fn count_vowels(phrase)
+	letters = split('', phrase)
+	print "There are ", count_each(letters, is_vowel), " vowels."
+end
+
+fn is_consonant(ch)
+	return not is_vowel(ch)
+end
+
+fn count_consonants(phrase)
+	letters = split('', phrase)
+	print "There are ", count_each(letters, is_consonant), " vowels."
+end
+
+commands = {
+	'u' : to_upper,
+	'upper' : to_upper,
+	'l' : to_lower,
+	'lower' : to_lower,
+	'v': count_vowels, 
+	'vowels': count_vowels, 
+	'c' : count_consonants,
+	'consonants' : count_consonants
+}
+
+local line = readline()
+while line do
+	line = chomp(line)
+	words = split(' ', line)
+	cmd = shift(words)
+	phrase = join(' ', words)
+	if key cmd in commands then
+		commands{cmd}(phrase)
+	else
+		print "Unrecognized Command: ", cmd
+	end
+	line = readline()
+end
