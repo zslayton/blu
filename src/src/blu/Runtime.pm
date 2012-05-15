@@ -15,10 +15,18 @@
 }
 
 sub length($arg) {
-	if (pir::does($arg, "array") || pir::does($arg, "hash")) {
+	if (pir::does($arg, "array") || pir::does($arg, "hash")) 
+	{
 		return pir::elements($arg);
 	}
-	return 1;
+	elsif (pir::does($arg, "string"))
+	{
+		return pir::length($arg);
+	}
+	else
+	{
+		return 1;
+	}
 }
 
 sub has_key($hash, $key) {

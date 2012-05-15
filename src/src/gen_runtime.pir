@@ -1,107 +1,107 @@
 
 .namespace []
-.sub "_block1000"  :anon :subid("10_1336830739.54919")
+.sub "_block1000"  :anon :subid("10_1337048938.53354")
 .annotate 'file', "src/blu/Runtime.pm"
 .annotate 'line', 0
-    .const 'Sub' $P1085 = "24_1336830739.54919" 
-    capture_lex $P1085
-    .const 'Sub' $P1079 = "23_1336830739.54919" 
-    capture_lex $P1079
-    .const 'Sub' $P1073 = "22_1336830739.54919" 
-    capture_lex $P1073
-    .const 'Sub' $P1067 = "21_1336830739.54919" 
-    capture_lex $P1067
-    .const 'Sub' $P1060 = "20_1336830739.54919" 
-    capture_lex $P1060
-    .const 'Sub' $P1052 = "19_1336830739.54919" 
-    capture_lex $P1052
-    .const 'Sub' $P1046 = "18_1336830739.54919" 
-    capture_lex $P1046
-    .const 'Sub' $P1040 = "17_1336830739.54919" 
-    capture_lex $P1040
-    .const 'Sub' $P1035 = "16_1336830739.54919" 
-    capture_lex $P1035
-    .const 'Sub' $P1030 = "15_1336830739.54919" 
-    capture_lex $P1030
-    .const 'Sub' $P1024 = "14_1336830739.54919" 
-    capture_lex $P1024
-    .const 'Sub' $P1018 = "13_1336830739.54919" 
-    capture_lex $P1018
-    .const 'Sub' $P1011 = "12_1336830739.54919" 
-    capture_lex $P1011
-    .const 'Sub' $P1003 = "11_1336830739.54919" 
+    .const 'Sub' $P1086 = "24_1337048938.53354" 
+    capture_lex $P1086
+    .const 'Sub' $P1080 = "23_1337048938.53354" 
+    capture_lex $P1080
+    .const 'Sub' $P1074 = "22_1337048938.53354" 
+    capture_lex $P1074
+    .const 'Sub' $P1068 = "21_1337048938.53354" 
+    capture_lex $P1068
+    .const 'Sub' $P1061 = "20_1337048938.53354" 
+    capture_lex $P1061
+    .const 'Sub' $P1053 = "19_1337048938.53354" 
+    capture_lex $P1053
+    .const 'Sub' $P1047 = "18_1337048938.53354" 
+    capture_lex $P1047
+    .const 'Sub' $P1041 = "17_1337048938.53354" 
+    capture_lex $P1041
+    .const 'Sub' $P1036 = "16_1337048938.53354" 
+    capture_lex $P1036
+    .const 'Sub' $P1031 = "15_1337048938.53354" 
+    capture_lex $P1031
+    .const 'Sub' $P1025 = "14_1337048938.53354" 
+    capture_lex $P1025
+    .const 'Sub' $P1019 = "13_1337048938.53354" 
+    capture_lex $P1019
+    .const 'Sub' $P1012 = "12_1337048938.53354" 
+    capture_lex $P1012
+    .const 'Sub' $P1003 = "11_1337048938.53354" 
     capture_lex $P1003
 .annotate 'line', 17
-    .const 'Sub' $P1003 = "11_1336830739.54919" 
-    newclosure $P1009, $P1003
-    set $P1002, $P1009
+    .const 'Sub' $P1003 = "11_1337048938.53354" 
+    newclosure $P1010, $P1003
+    set $P1002, $P1010
     .lex "length", $P1002
-.annotate 'line', 24
-    .const 'Sub' $P1011 = "12_1336830739.54919" 
-    newclosure $P1016, $P1011
-    set $P1010, $P1016
-    .lex "has_key", $P1010
-.annotate 'line', 28
-    .const 'Sub' $P1018 = "13_1336830739.54919" 
-    newclosure $P1022, $P1018
-    set $P1017, $P1022
-    .lex "print", $P1017
-.annotate 'line', 33
-    .const 'Sub' $P1024 = "14_1336830739.54919" 
-    newclosure $P1028, $P1024
-    set $P1023, $P1028
-    .lex "say", $P1023
-.annotate 'line', 38
-    get_global $P104, "$STDIN"
-    unless_null $P104, vivify_29
-    new $P104, "Undef"
-    set_global "$STDIN", $P104
-  vivify_29:
-.annotate 'line', 43
-    .const 'Sub' $P1030 = "15_1336830739.54919" 
-    newclosure $P1033, $P1030
-    set $P1029, $P1033
-    .lex "readnum", $P1029
+.annotate 'line', 32
+    .const 'Sub' $P1012 = "12_1337048938.53354" 
+    newclosure $P1017, $P1012
+    set $P1011, $P1017
+    .lex "has_key", $P1011
+.annotate 'line', 36
+    .const 'Sub' $P1019 = "13_1337048938.53354" 
+    newclosure $P1023, $P1019
+    set $P1018, $P1023
+    .lex "print", $P1018
+.annotate 'line', 41
+    .const 'Sub' $P1025 = "14_1337048938.53354" 
+    newclosure $P1029, $P1025
+    set $P1024, $P1029
+    .lex "say", $P1024
 .annotate 'line', 46
-    .const 'Sub' $P1035 = "16_1336830739.54919" 
-    newclosure $P1038, $P1035
-    set $P1034, $P1038
-    .lex "readline", $P1034
+    get_global $P105, "$STDIN"
+    unless_null $P105, vivify_29
+    new $P105, "Undef"
+    set_global "$STDIN", $P105
+  vivify_29:
 .annotate 'line', 51
-    .const 'Sub' $P1040 = "17_1336830739.54919" 
-    newclosure $P1044, $P1040
-    set $P1039, $P1044
-    .lex "num", $P1039
-.annotate 'line', 56
-    .const 'Sub' $P1046 = "18_1336830739.54919" 
-    newclosure $P1050, $P1046
-    set $P1045, $P1050
-    .lex "str", $P1045
-.annotate 'line', 60
-    .const 'Sub' $P1052 = "19_1336830739.54919" 
-    newclosure $P1058, $P1052
-    set $P1051, $P1058
-    .lex "substr", $P1051
-.annotate 'line', 65
-    .const 'Sub' $P1060 = "20_1336830739.54919" 
-    newclosure $P1065, $P1060
-    set $P1059, $P1065
-    .lex "split", $P1059
-.annotate 'line', 70
-    .const 'Sub' $P1067 = "21_1336830739.54919" 
-    newclosure $P1071, $P1067
-    set $P1066, $P1071
-    .lex "strlen", $P1066
-.annotate 'line', 75
-    .const 'Sub' $P1073 = "22_1336830739.54919" 
-    newclosure $P1077, $P1073
-    set $P1072, $P1077
-    .lex "ord", $P1072
-.annotate 'line', 80
-    .const 'Sub' $P1079 = "23_1336830739.54919" 
-    newclosure $P1083, $P1079
-    set $P1078, $P1083
-    .lex "char", $P1078
+    .const 'Sub' $P1031 = "15_1337048938.53354" 
+    newclosure $P1034, $P1031
+    set $P1030, $P1034
+    .lex "readnum", $P1030
+.annotate 'line', 54
+    .const 'Sub' $P1036 = "16_1337048938.53354" 
+    newclosure $P1039, $P1036
+    set $P1035, $P1039
+    .lex "readline", $P1035
+.annotate 'line', 59
+    .const 'Sub' $P1041 = "17_1337048938.53354" 
+    newclosure $P1045, $P1041
+    set $P1040, $P1045
+    .lex "num", $P1040
+.annotate 'line', 64
+    .const 'Sub' $P1047 = "18_1337048938.53354" 
+    newclosure $P1051, $P1047
+    set $P1046, $P1051
+    .lex "str", $P1046
+.annotate 'line', 68
+    .const 'Sub' $P1053 = "19_1337048938.53354" 
+    newclosure $P1059, $P1053
+    set $P1052, $P1059
+    .lex "substr", $P1052
+.annotate 'line', 73
+    .const 'Sub' $P1061 = "20_1337048938.53354" 
+    newclosure $P1066, $P1061
+    set $P1060, $P1066
+    .lex "split", $P1060
+.annotate 'line', 78
+    .const 'Sub' $P1068 = "21_1337048938.53354" 
+    newclosure $P1072, $P1068
+    set $P1067, $P1072
+    .lex "strlen", $P1067
+.annotate 'line', 83
+    .const 'Sub' $P1074 = "22_1337048938.53354" 
+    newclosure $P1078, $P1074
+    set $P1073, $P1078
+    .lex "ord", $P1073
+.annotate 'line', 88
+    .const 'Sub' $P1080 = "23_1337048938.53354" 
+    newclosure $P1084, $P1080
+    set $P1079, $P1084
+    .lex "char", $P1079
 .annotate 'line', 1
     $P0 = find_dynamic_lex "$*CTXSAVE"
     if null $P0 goto ctxsave_done
@@ -110,47 +110,47 @@
     $P0."ctxsave"()
   ctxsave_done:
 .annotate 'line', 2
-    .const 'Sub' $P1085 = "24_1336830739.54919" 
-    capture_lex $P1085
-    $P1085()
+    .const 'Sub' $P1086 = "24_1337048938.53354" 
+    capture_lex $P1086
+    $P1086()
 .annotate 'line', 1
-    find_lex $P115, "length"
-    find_lex $P115, "has_key"
-    find_lex $P115, "print"
-    find_lex $P115, "say"
-    get_global $P115, "$STDIN"
-    find_lex $P115, "readnum"
-    find_lex $P115, "readline"
-    find_lex $P115, "num"
-    find_lex $P115, "str"
-    find_lex $P115, "substr"
-    find_lex $P115, "split"
-    find_lex $P115, "strlen"
-    find_lex $P115, "ord"
-    find_lex $P115, "char"
-    .return ($P115)
-    .const 'Sub' $P1099 = "27_1336830739.54919" 
-    .return ($P1099)
+    find_lex $P116, "length"
+    find_lex $P116, "has_key"
+    find_lex $P116, "print"
+    find_lex $P116, "say"
+    get_global $P116, "$STDIN"
+    find_lex $P116, "readnum"
+    find_lex $P116, "readline"
+    find_lex $P116, "num"
+    find_lex $P116, "str"
+    find_lex $P116, "substr"
+    find_lex $P116, "split"
+    find_lex $P116, "strlen"
+    find_lex $P116, "ord"
+    find_lex $P116, "char"
+    .return ($P116)
+    .const 'Sub' $P1100 = "27_1337048938.53354" 
+    .return ($P1100)
 .end
 
 
 .namespace []
-.sub "" :load :init :subid("post28") :outer("10_1336830739.54919")
+.sub "" :load :init :subid("post28") :outer("10_1337048938.53354")
 .annotate 'file', "src/blu/Runtime.pm"
 .annotate 'line', 0
-    .const 'Sub' $P1001 = "10_1336830739.54919" 
+    .const 'Sub' $P1001 = "10_1337048938.53354" 
     .local pmc block
     set block, $P1001
-.annotate 'line', 40
-    getinterp $P117
-    $P118 = $P117."stdin_handle"()
-    set_global "$STDIN", $P118
+.annotate 'line', 48
+    getinterp $P118
+    $P119 = $P118."stdin_handle"()
+    set_global "$STDIN", $P119
 .end
 
 
 .namespace []
 .include "except_types.pasm"
-.sub "length"  :subid("11_1336830739.54919") :outer("10_1336830739.54919")
+.sub "length"  :subid("11_1337048938.53354") :outer("10_1337048938.53354")
     .param pmc param_1006
 .annotate 'file', "src/blu/Runtime.pm"
 .annotate 'line', 17
@@ -159,71 +159,62 @@
     push_eh $P1005
     .lex "$arg", param_1006
 .annotate 'line', 18
-    find_lex $P101, "$arg"
-    does $I100, $P101, "array"
+    find_lex $P102, "$arg"
+    does $I100, $P102, "array"
     unless $I100, unless_1008
-    new $P100, 'Integer'
-    set $P100, $I100
+    new $P101, 'Integer'
+    set $P101, $I100
     goto unless_1008_end
   unless_1008:
-    find_lex $P102, "$arg"
-    does $I101, $P102, "hash"
-    new $P100, 'Integer'
-    set $P100, $I101
+    find_lex $P103, "$arg"
+    does $I101, $P103, "hash"
+    new $P101, 'Integer'
+    set $P101, $I101
   unless_1008_end:
-    unless $P100, if_1007_end
-.annotate 'line', 19
-    new $P103, "Exception"
-    set $P103['type'], .CONTROL_RETURN
-    find_lex $P104, "$arg"
-    elements $I102, $P104
-    new $P105, 'Integer'
-    set $P105, $I102
-    setattribute $P103, 'payload', $P105
-    throw $P103
+    if $P101, if_1007
+.annotate 'line', 22
+    find_lex $P105, "$arg"
+    does $I102, $P105, "string"
+    if $I102, if_1009
+.annotate 'line', 28
+    new $P106, "Exception"
+    set $P106['type'], .CONTROL_RETURN
+    new $P107, "Integer"
+    assign $P107, 1
+    setattribute $P106, 'payload', $P107
+    throw $P106
+.annotate 'line', 27
+    goto if_1009_end
+  if_1009:
+.annotate 'line', 24
+    new $P106, "Exception"
+    set $P106['type'], .CONTROL_RETURN
+    find_lex $P107, "$arg"
+    set $S100, $P107
+    length $I103, $S100
+    new $P108, 'Integer'
+    set $P108, $I103
+    setattribute $P106, 'payload', $P108
+    throw $P106
+  if_1009_end:
+.annotate 'line', 22
+    set $P100, $P104
+.annotate 'line', 18
+    goto if_1007_end
+  if_1007:
+.annotate 'line', 20
+    new $P104, "Exception"
+    set $P104['type'], .CONTROL_RETURN
+    find_lex $P105, "$arg"
+    elements $I102, $P105
+    new $P106, 'Integer'
+    set $P106, $I102
+    setattribute $P104, 'payload', $P106
+    throw $P104
   if_1007_end:
-.annotate 'line', 21
-    new $P100, "Exception"
-    set $P100['type'], .CONTROL_RETURN
-    new $P101, "Integer"
-    assign $P101, 1
-    setattribute $P100, 'payload', $P101
-    throw $P100
 .annotate 'line', 17
-    .return ()
-  control_1004:
-    .local pmc exception 
-    .get_results (exception) 
-    getattribute $P100, exception, "payload"
     .return ($P100)
-.end
-
-
-.namespace []
-.include "except_types.pasm"
-.sub "has_key"  :subid("12_1336830739.54919") :outer("10_1336830739.54919")
-    .param pmc param_1014
-    .param pmc param_1015
-.annotate 'file', "src/blu/Runtime.pm"
-.annotate 'line', 24
-    new $P1013, 'ExceptionHandler', [.CONTROL_RETURN]
-    set_label $P1013, control_1012
-    push_eh $P1013
-    .lex "$hash", param_1014
-    .lex "$key", param_1015
-.annotate 'line', 25
-    new $P101, "Exception"
-    set $P101['type'], .CONTROL_RETURN
-    find_lex $P103, "$key"
-    find_lex $P102, "$hash"
-    exists $I100, $P102[$P103]
-    new $P104, 'Integer'
-    set $P104, $I100
-    setattribute $P101, 'payload', $P104
-    throw $P101
-.annotate 'line', 24
-    .return ()
-  control_1012:
+  control_1004:
     .local pmc exception 
     .get_results (exception) 
     getattribute $P101, exception, "payload"
@@ -233,21 +224,29 @@
 
 .namespace []
 .include "except_types.pasm"
-.sub "print"  :subid("13_1336830739.54919") :outer("10_1336830739.54919")
-    .param pmc param_1021 :slurpy
+.sub "has_key"  :subid("12_1337048938.53354") :outer("10_1337048938.53354")
+    .param pmc param_1015
+    .param pmc param_1016
 .annotate 'file', "src/blu/Runtime.pm"
-.annotate 'line', 28
-    new $P1020, 'ExceptionHandler', [.CONTROL_RETURN]
-    set_label $P1020, control_1019
-    push_eh $P1020
-    .lex "@args", param_1021
-.annotate 'line', 29
-    find_lex $P102, "@args"
-    join $S100, "", $P102
-    print $S100
-.annotate 'line', 28
-    .return (1)
-  control_1019:
+.annotate 'line', 32
+    new $P1014, 'ExceptionHandler', [.CONTROL_RETURN]
+    set_label $P1014, control_1013
+    push_eh $P1014
+    .lex "$hash", param_1015
+    .lex "$key", param_1016
+.annotate 'line', 33
+    new $P102, "Exception"
+    set $P102['type'], .CONTROL_RETURN
+    find_lex $P104, "$key"
+    find_lex $P103, "$hash"
+    exists $I100, $P103[$P104]
+    new $P105, 'Integer'
+    set $P105, $I100
+    setattribute $P102, 'payload', $P105
+    throw $P102
+.annotate 'line', 32
+    .return ()
+  control_1013:
     .local pmc exception 
     .get_results (exception) 
     getattribute $P102, exception, "payload"
@@ -257,21 +256,21 @@
 
 .namespace []
 .include "except_types.pasm"
-.sub "say"  :subid("14_1336830739.54919") :outer("10_1336830739.54919")
-    .param pmc param_1027 :slurpy
+.sub "print"  :subid("13_1337048938.53354") :outer("10_1337048938.53354")
+    .param pmc param_1022 :slurpy
 .annotate 'file', "src/blu/Runtime.pm"
-.annotate 'line', 33
-    new $P1026, 'ExceptionHandler', [.CONTROL_RETURN]
-    set_label $P1026, control_1025
-    push_eh $P1026
-    .lex "@args", param_1027
-.annotate 'line', 34
+.annotate 'line', 36
+    new $P1021, 'ExceptionHandler', [.CONTROL_RETURN]
+    set_label $P1021, control_1020
+    push_eh $P1021
+    .lex "@args", param_1022
+.annotate 'line', 37
     find_lex $P103, "@args"
     join $S100, "", $P103
-    say $S100
-.annotate 'line', 33
+    print $S100
+.annotate 'line', 36
     .return (1)
-  control_1025:
+  control_1020:
     .local pmc exception 
     .get_results (exception) 
     getattribute $P103, exception, "payload"
@@ -281,40 +280,43 @@
 
 .namespace []
 .include "except_types.pasm"
-.sub "readnum"  :subid("15_1336830739.54919") :outer("10_1336830739.54919")
+.sub "say"  :subid("14_1337048938.53354") :outer("10_1337048938.53354")
+    .param pmc param_1028 :slurpy
 .annotate 'file', "src/blu/Runtime.pm"
-.annotate 'line', 43
-    new $P1032, 'ExceptionHandler', [.CONTROL_RETURN]
-    set_label $P1032, control_1031
-    push_eh $P1032
-.annotate 'line', 44
-    get_global $P105, "$STDIN"
-    $P106 = $P105."readline"()
-    set $N100, $P106
-.annotate 'line', 43
-    .return ($N100)
-  control_1031:
+.annotate 'line', 41
+    new $P1027, 'ExceptionHandler', [.CONTROL_RETURN]
+    set_label $P1027, control_1026
+    push_eh $P1027
+    .lex "@args", param_1028
+.annotate 'line', 42
+    find_lex $P104, "@args"
+    join $S100, "", $P104
+    say $S100
+.annotate 'line', 41
+    .return (1)
+  control_1026:
     .local pmc exception 
     .get_results (exception) 
-    getattribute $P105, exception, "payload"
-    .return ($P105)
+    getattribute $P104, exception, "payload"
+    .return ($P104)
 .end
 
 
 .namespace []
 .include "except_types.pasm"
-.sub "readline"  :subid("16_1336830739.54919") :outer("10_1336830739.54919")
+.sub "readnum"  :subid("15_1337048938.53354") :outer("10_1337048938.53354")
 .annotate 'file', "src/blu/Runtime.pm"
-.annotate 'line', 46
-    new $P1037, 'ExceptionHandler', [.CONTROL_RETURN]
-    set_label $P1037, control_1036
-    push_eh $P1037
-.annotate 'line', 47
+.annotate 'line', 51
+    new $P1033, 'ExceptionHandler', [.CONTROL_RETURN]
+    set_label $P1033, control_1032
+    push_eh $P1033
+.annotate 'line', 52
     get_global $P106, "$STDIN"
     $P107 = $P106."readline"()
-.annotate 'line', 46
-    .return ($P107)
-  control_1036:
+    set $N100, $P107
+.annotate 'line', 51
+    .return ($N100)
+  control_1032:
     .local pmc exception 
     .get_results (exception) 
     getattribute $P106, exception, "payload"
@@ -324,57 +326,48 @@
 
 .namespace []
 .include "except_types.pasm"
-.sub "num"  :subid("17_1336830739.54919") :outer("10_1336830739.54919")
-    .param pmc param_1043
+.sub "readline"  :subid("16_1337048938.53354") :outer("10_1337048938.53354")
 .annotate 'file', "src/blu/Runtime.pm"
-.annotate 'line', 51
-    new $P1042, 'ExceptionHandler', [.CONTROL_RETURN]
-    set_label $P1042, control_1041
-    push_eh $P1042
-.annotate 'line', 50
-    .lex "$string", param_1043
-.annotate 'line', 52
-    new $P108, "Exception"
-    set $P108['type'], .CONTROL_RETURN
-    find_lex $P109, "$string"
-    set $N101, $P109
-    new $P110, 'Float'
-    set $P110, $N101
-    setattribute $P108, 'payload', $P110
-    throw $P108
-.annotate 'line', 51
-    .return ()
-  control_1041:
+.annotate 'line', 54
+    new $P1038, 'ExceptionHandler', [.CONTROL_RETURN]
+    set_label $P1038, control_1037
+    push_eh $P1038
+.annotate 'line', 55
+    get_global $P107, "$STDIN"
+    $P108 = $P107."readline"()
+.annotate 'line', 54
+    .return ($P108)
+  control_1037:
     .local pmc exception 
     .get_results (exception) 
-    getattribute $P108, exception, "payload"
-    .return ($P108)
+    getattribute $P107, exception, "payload"
+    .return ($P107)
 .end
 
 
 .namespace []
 .include "except_types.pasm"
-.sub "str"  :subid("18_1336830739.54919") :outer("10_1336830739.54919")
-    .param pmc param_1049
+.sub "num"  :subid("17_1337048938.53354") :outer("10_1337048938.53354")
+    .param pmc param_1044
 .annotate 'file', "src/blu/Runtime.pm"
-.annotate 'line', 56
-    new $P1048, 'ExceptionHandler', [.CONTROL_RETURN]
-    set_label $P1048, control_1047
-    push_eh $P1048
-.annotate 'line', 55
-    .lex "$num", param_1049
-.annotate 'line', 57
+.annotate 'line', 59
+    new $P1043, 'ExceptionHandler', [.CONTROL_RETURN]
+    set_label $P1043, control_1042
+    push_eh $P1043
+.annotate 'line', 58
+    .lex "$string", param_1044
+.annotate 'line', 60
     new $P109, "Exception"
     set $P109['type'], .CONTROL_RETURN
-    find_lex $P110, "$num"
-    set $S100, $P110
-    new $P111, 'String'
-    set $P111, $S100
+    find_lex $P110, "$string"
+    set $N101, $P110
+    new $P111, 'Float'
+    set $P111, $N101
     setattribute $P109, 'payload', $P111
     throw $P109
-.annotate 'line', 56
+.annotate 'line', 59
     .return ()
-  control_1047:
+  control_1042:
     .local pmc exception 
     .get_results (exception) 
     getattribute $P109, exception, "payload"
@@ -384,35 +377,27 @@
 
 .namespace []
 .include "except_types.pasm"
-.sub "substr"  :subid("19_1336830739.54919") :outer("10_1336830739.54919")
-    .param pmc param_1055
-    .param pmc param_1056
-    .param pmc param_1057
+.sub "str"  :subid("18_1337048938.53354") :outer("10_1337048938.53354")
+    .param pmc param_1050
 .annotate 'file', "src/blu/Runtime.pm"
-.annotate 'line', 60
-    new $P1054, 'ExceptionHandler', [.CONTROL_RETURN]
-    set_label $P1054, control_1053
-    push_eh $P1054
-    .lex "$string", param_1055
-    .lex "$index", param_1056
-    .lex "$num", param_1057
-.annotate 'line', 61
+.annotate 'line', 64
+    new $P1049, 'ExceptionHandler', [.CONTROL_RETURN]
+    set_label $P1049, control_1048
+    push_eh $P1049
+.annotate 'line', 63
+    .lex "$num", param_1050
+.annotate 'line', 65
     new $P110, "Exception"
     set $P110['type'], .CONTROL_RETURN
-    find_lex $P111, "$string"
+    find_lex $P111, "$num"
     set $S100, $P111
-    find_lex $P112, "$index"
-    set $I100, $P112
-    find_lex $P113, "$num"
-    set $I101, $P113
-    substr $S101, $S100, $I100, $I101
-    new $P114, 'String'
-    set $P114, $S101
-    setattribute $P110, 'payload', $P114
+    new $P112, 'String'
+    set $P112, $S100
+    setattribute $P110, 'payload', $P112
     throw $P110
-.annotate 'line', 60
+.annotate 'line', 64
     .return ()
-  control_1053:
+  control_1048:
     .local pmc exception 
     .get_results (exception) 
     getattribute $P110, exception, "payload"
@@ -422,30 +407,35 @@
 
 .namespace []
 .include "except_types.pasm"
-.sub "split"  :subid("20_1336830739.54919") :outer("10_1336830739.54919")
-    .param pmc param_1063
-    .param pmc param_1064
+.sub "substr"  :subid("19_1337048938.53354") :outer("10_1337048938.53354")
+    .param pmc param_1056
+    .param pmc param_1057
+    .param pmc param_1058
 .annotate 'file', "src/blu/Runtime.pm"
-.annotate 'line', 65
-    new $P1062, 'ExceptionHandler', [.CONTROL_RETURN]
-    set_label $P1062, control_1061
-    push_eh $P1062
-.annotate 'line', 64
-    .lex "$string", param_1063
-    .lex "$delimiter", param_1064
-.annotate 'line', 66
+.annotate 'line', 68
+    new $P1055, 'ExceptionHandler', [.CONTROL_RETURN]
+    set_label $P1055, control_1054
+    push_eh $P1055
+    .lex "$string", param_1056
+    .lex "$index", param_1057
+    .lex "$num", param_1058
+.annotate 'line', 69
     new $P111, "Exception"
     set $P111['type'], .CONTROL_RETURN
     find_lex $P112, "$string"
     set $S100, $P112
-    find_lex $P113, "$delimiter"
-    set $S101, $P113
-    split $P114, $S100, $S101
-    setattribute $P111, 'payload', $P114
+    find_lex $P113, "$index"
+    set $I100, $P113
+    find_lex $P114, "$num"
+    set $I101, $P114
+    substr $S101, $S100, $I100, $I101
+    new $P115, 'String'
+    set $P115, $S101
+    setattribute $P111, 'payload', $P115
     throw $P111
-.annotate 'line', 65
+.annotate 'line', 68
     .return ()
-  control_1061:
+  control_1054:
     .local pmc exception 
     .get_results (exception) 
     getattribute $P111, exception, "payload"
@@ -455,28 +445,30 @@
 
 .namespace []
 .include "except_types.pasm"
-.sub "strlen"  :subid("21_1336830739.54919") :outer("10_1336830739.54919")
-    .param pmc param_1070
+.sub "split"  :subid("20_1337048938.53354") :outer("10_1337048938.53354")
+    .param pmc param_1064
+    .param pmc param_1065
 .annotate 'file', "src/blu/Runtime.pm"
-.annotate 'line', 70
-    new $P1069, 'ExceptionHandler', [.CONTROL_RETURN]
-    set_label $P1069, control_1068
-    push_eh $P1069
-.annotate 'line', 69
-    .lex "$string", param_1070
-.annotate 'line', 71
+.annotate 'line', 73
+    new $P1063, 'ExceptionHandler', [.CONTROL_RETURN]
+    set_label $P1063, control_1062
+    push_eh $P1063
+.annotate 'line', 72
+    .lex "$string", param_1064
+    .lex "$delimiter", param_1065
+.annotate 'line', 74
     new $P112, "Exception"
     set $P112['type'], .CONTROL_RETURN
     find_lex $P113, "$string"
     set $S100, $P113
-    length $I100, $S100
-    new $P114, 'Integer'
-    set $P114, $I100
-    setattribute $P112, 'payload', $P114
+    find_lex $P114, "$delimiter"
+    set $S101, $P114
+    split $P115, $S100, $S101
+    setattribute $P112, 'payload', $P115
     throw $P112
-.annotate 'line', 70
+.annotate 'line', 73
     .return ()
-  control_1068:
+  control_1062:
     .local pmc exception 
     .get_results (exception) 
     getattribute $P112, exception, "payload"
@@ -486,28 +478,28 @@
 
 .namespace []
 .include "except_types.pasm"
-.sub "ord"  :subid("22_1336830739.54919") :outer("10_1336830739.54919")
-    .param pmc param_1076
+.sub "strlen"  :subid("21_1337048938.53354") :outer("10_1337048938.53354")
+    .param pmc param_1071
 .annotate 'file', "src/blu/Runtime.pm"
-.annotate 'line', 75
-    new $P1075, 'ExceptionHandler', [.CONTROL_RETURN]
-    set_label $P1075, control_1074
-    push_eh $P1075
-.annotate 'line', 74
-    .lex "$letter", param_1076
-.annotate 'line', 76
+.annotate 'line', 78
+    new $P1070, 'ExceptionHandler', [.CONTROL_RETURN]
+    set_label $P1070, control_1069
+    push_eh $P1070
+.annotate 'line', 77
+    .lex "$string", param_1071
+.annotate 'line', 79
     new $P113, "Exception"
     set $P113['type'], .CONTROL_RETURN
-    find_lex $P114, "$letter"
+    find_lex $P114, "$string"
     set $S100, $P114
-    ord $I100, $S100
+    length $I100, $S100
     new $P115, 'Integer'
     set $P115, $I100
     setattribute $P113, 'payload', $P115
     throw $P113
-.annotate 'line', 75
+.annotate 'line', 78
     .return ()
-  control_1074:
+  control_1069:
     .local pmc exception 
     .get_results (exception) 
     getattribute $P113, exception, "payload"
@@ -517,28 +509,28 @@
 
 .namespace []
 .include "except_types.pasm"
-.sub "char"  :subid("23_1336830739.54919") :outer("10_1336830739.54919")
-    .param pmc param_1082
+.sub "ord"  :subid("22_1337048938.53354") :outer("10_1337048938.53354")
+    .param pmc param_1077
 .annotate 'file', "src/blu/Runtime.pm"
-.annotate 'line', 80
-    new $P1081, 'ExceptionHandler', [.CONTROL_RETURN]
-    set_label $P1081, control_1080
-    push_eh $P1081
-.annotate 'line', 79
-    .lex "$num_val", param_1082
-.annotate 'line', 81
+.annotate 'line', 83
+    new $P1076, 'ExceptionHandler', [.CONTROL_RETURN]
+    set_label $P1076, control_1075
+    push_eh $P1076
+.annotate 'line', 82
+    .lex "$letter", param_1077
+.annotate 'line', 84
     new $P114, "Exception"
     set $P114['type'], .CONTROL_RETURN
-    find_lex $P115, "$num_val"
-    set $I100, $P115
-    chr $S100, $I100
-    new $P116, 'String'
-    set $P116, $S100
+    find_lex $P115, "$letter"
+    set $S100, $P115
+    ord $I100, $S100
+    new $P116, 'Integer'
+    set $P116, $I100
     setattribute $P114, 'payload', $P116
     throw $P114
-.annotate 'line', 80
+.annotate 'line', 83
     .return ()
-  control_1080:
+  control_1075:
     .local pmc exception 
     .get_results (exception) 
     getattribute $P114, exception, "payload"
@@ -547,26 +539,57 @@
 
 
 .namespace []
-.sub "_block1084"  :anon :subid("24_1336830739.54919") :outer("10_1336830739.54919")
+.include "except_types.pasm"
+.sub "char"  :subid("23_1337048938.53354") :outer("10_1337048938.53354")
+    .param pmc param_1083
+.annotate 'file', "src/blu/Runtime.pm"
+.annotate 'line', 88
+    new $P1082, 'ExceptionHandler', [.CONTROL_RETURN]
+    set_label $P1082, control_1081
+    push_eh $P1082
+.annotate 'line', 87
+    .lex "$num_val", param_1083
+.annotate 'line', 89
+    new $P115, "Exception"
+    set $P115['type'], .CONTROL_RETURN
+    find_lex $P116, "$num_val"
+    set $I100, $P116
+    chr $S100, $I100
+    new $P117, 'String'
+    set $P117, $S100
+    setattribute $P115, 'payload', $P117
+    throw $P115
+.annotate 'line', 88
+    .return ()
+  control_1081:
+    .local pmc exception 
+    .get_results (exception) 
+    getattribute $P115, exception, "payload"
+    .return ($P115)
+.end
+
+
+.namespace []
+.sub "_block1085"  :anon :subid("24_1337048938.53354") :outer("10_1337048938.53354")
 .annotate 'file', "src/blu/Runtime.pm"
 .annotate 'line', 2
-    .const 'Sub' $P1093 = "26_1336830739.54919" 
-    capture_lex $P1093
-    .const 'Sub' $P1087 = "25_1336830739.54919" 
-    capture_lex $P1087
+    .const 'Sub' $P1094 = "26_1337048938.53354" 
+    capture_lex $P1094
+    .const 'Sub' $P1088 = "25_1337048938.53354" 
+    capture_lex $P1088
 .annotate 'line', 3
-    .const 'Sub' $P1087 = "25_1336830739.54919" 
-    newclosure $P1091, $P1087
-    set $P1086, $P1091
-    .lex "array", $P1086
+    .const 'Sub' $P1088 = "25_1337048938.53354" 
+    newclosure $P1092, $P1088
+    set $P1087, $P1092
+    .lex "array", $P1087
 .annotate 'line', 4
-    .const 'Sub' $P1093 = "26_1336830739.54919" 
-    newclosure $P1097, $P1093
-    set $P1092, $P1097
-    .lex "hash", $P1092
+    .const 'Sub' $P1094 = "26_1337048938.53354" 
+    newclosure $P1098, $P1094
+    set $P1093, $P1098
+    .lex "hash", $P1093
 .annotate 'line', 2
-    find_lex $P119, "array"
-    find_lex $P119, "hash"
+    find_lex $P120, "array"
+    find_lex $P120, "hash"
 .annotate 'line', 5
 
         $P0 = find_lex 'array'
@@ -585,50 +608,50 @@
 
 .namespace []
 .include "except_types.pasm"
-.sub "array"  :subid("25_1336830739.54919") :outer("24_1336830739.54919")
-    .param pmc param_1090 :slurpy
+.sub "array"  :subid("25_1337048938.53354") :outer("24_1337048938.53354")
+    .param pmc param_1091 :slurpy
 .annotate 'file', "src/blu/Runtime.pm"
 .annotate 'line', 3
-    new $P1089, 'ExceptionHandler', [.CONTROL_RETURN]
-    set_label $P1089, control_1088
-    push_eh $P1089
-    .lex "@args", param_1090
-    find_lex $P115, "@args"
-    .return ($P115)
-  control_1088:
+    new $P1090, 'ExceptionHandler', [.CONTROL_RETURN]
+    set_label $P1090, control_1089
+    push_eh $P1090
+    .lex "@args", param_1091
+    find_lex $P116, "@args"
+    .return ($P116)
+  control_1089:
     .local pmc exception 
     .get_results (exception) 
-    getattribute $P116, exception, "payload"
-    .return ($P116)
+    getattribute $P117, exception, "payload"
+    .return ($P117)
 .end
 
 
 .namespace []
 .include "except_types.pasm"
-.sub "hash"  :subid("26_1336830739.54919") :outer("24_1336830739.54919")
-    .param pmc param_1096 :slurpy :named
+.sub "hash"  :subid("26_1337048938.53354") :outer("24_1337048938.53354")
+    .param pmc param_1097 :slurpy :named
 .annotate 'file', "src/blu/Runtime.pm"
 .annotate 'line', 4
-    new $P1095, 'ExceptionHandler', [.CONTROL_RETURN]
-    set_label $P1095, control_1094
-    push_eh $P1095
-    .lex "%args", param_1096
-    find_lex $P117, "%args"
-    .return ($P117)
-  control_1094:
+    new $P1096, 'ExceptionHandler', [.CONTROL_RETURN]
+    set_label $P1096, control_1095
+    push_eh $P1096
+    .lex "%args", param_1097
+    find_lex $P118, "%args"
+    .return ($P118)
+  control_1095:
     .local pmc exception 
     .get_results (exception) 
-    getattribute $P118, exception, "payload"
-    .return ($P118)
+    getattribute $P119, exception, "payload"
+    .return ($P119)
 .end
 
 
 .namespace []
-.sub "_block1098" :load :anon :subid("27_1336830739.54919")
+.sub "_block1099" :load :anon :subid("27_1337048938.53354")
 .annotate 'file', "src/blu/Runtime.pm"
 .annotate 'line', 1
-    .const '' $P1100 = "10_1336830739.54919" 
-    $P116 = $P1100()
-    .return ($P116)
+    .const '' $P1101 = "10_1337048938.53354" 
+    $P117 = $P1101()
+    .return ($P117)
 .end
 
