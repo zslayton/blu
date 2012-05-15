@@ -69,9 +69,14 @@ sub substr($string, $index, $num) {
 	return pir::substr($string, $index, $num);
 }
 
-sub split($string, $delimiter)
+sub split($delimiter, $string)
 {
-	return pir::split($string, $delimiter);
+	return pir::split($delimiter, $string);
+}
+
+sub join($join_string, $pmc)
+{
+	return pir::join($join_string, $pmc);
 }
 
 sub strlen($string)
@@ -87,4 +92,24 @@ sub ord($letter)
 sub char($num_val)
 {
 	return pir::chr($num_val);
+}
+
+sub push($pmc, $val)
+{
+	return pir::push($pmc, $val);
+}
+
+sub pop($pmc)
+{
+	return pir::pop($pmc);
+}
+
+sub shift($pmc)
+{
+	return pir::shift($pmc);
+}
+
+sub unshift($pmc, $val)
+{
+	return pir::unshift($pmc, $val);
 }
