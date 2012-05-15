@@ -1,0 +1,17 @@
+x = {
+	'dog'  : 'Spot',
+	'cat'  : 'Mittens',
+	'bird' : 'Tweetie'
+}
+
+print x{'dog'}
+print x{'cat'}
+
+print key 'dog' in x
+print key 'cat' in x
+print key 'giraffe' in x
+
+y = 'dog'
+print key y in x
+y = 'giraffe'
+print key y in x
